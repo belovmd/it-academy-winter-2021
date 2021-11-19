@@ -263,7 +263,7 @@ while guesses_made < 6:
     if guess < number:
         print('Your guess is too low.')
 
-    if guess > number:
+    if guess > number:  
         print('Your guess is too high.')
 
     if guess == number:
