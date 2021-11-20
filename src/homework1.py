@@ -1,14 +1,8 @@
-from itertools import groupby
 from time import localtime
-import csv
-import doctest
 import glob
-import itertools
-import random
 import re
 import sys
 import unittest
-import xml.etree.ElementTree as etree
 
 # 1 line: Output
 print('Hello, world!')
