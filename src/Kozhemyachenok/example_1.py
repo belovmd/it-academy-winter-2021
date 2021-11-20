@@ -1,2 +1,2 @@
-#1 line: Output
-print ('Hello, world!')
+# 1 line: Output
+print('Hello, world!')
