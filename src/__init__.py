@@ -1,1 +1,1 @@
-﻿while True:
+﻿a = int()
