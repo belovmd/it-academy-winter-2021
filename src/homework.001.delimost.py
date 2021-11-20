@@ -19,7 +19,7 @@ while True:
     else:
         print('2. ага')
     if a % 2 > 0:
-        print('3. ого')   
+        print('3. ого')
     if a % 2 == 0 and a < 0:
         print('3. маловато')
     elif a % 2 == 0 and  a > 0:
