@@ -1,7 +1,7 @@
-from time import localtime
 import glob
 import re
 import sys
+from time import localtime
 import unittest
 
 # 1 line: Output
