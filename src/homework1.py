@@ -1,3 +1,14 @@
+from time import localtime
+from itertools import groupby
+import csv
+import doctest
+import glob
+import itertools
+import random
+import re
+import sys
+import xml.etree.ElementTree as etree
+
 print('Hello, world!')
 name = input('What is your name?\n')
 print('Hi, %s.' % name)
@@ -18,7 +29,6 @@ def greet(name):
 greet('Jack')
 greet('Jill')
 greet('Bob')
-import re
 
 for test_string in ['555-1212', 'ILL-EGAL']:
     if re.match(r'^\d{3}-\d{4}$', test_string):
@@ -33,7 +43,6 @@ grocery_bill = sum(prices[fruit] * my_purchase[fruit]
                    for fruit in my_purchase)
 print('I owe the grocer $%.2f' % grocery_bill)
 # This program adds up integers that have been passed as arguments in the command line
-import sys
 
 try:
     total = sum(int(arg) for arg in sys.argv[1:])
@@ -41,7 +50,7 @@ try:
 except ValueError:
     print('Please supply integer arguments')
 # indent your Python code to put into an email
-import glob
+
 
 # glob supports Unix style pathname extensions
 python_files = glob.glob('*.py')
@@ -53,7 +62,6 @@ for file_name in sorted(python_files):
             print('    ' + line.rstrip())
 
     print()
-from time import localtime
 
 activities = {8: 'Sleeping',
               9: 'Commuting',
@@ -101,7 +109,6 @@ class BankAccount(object):
 my_account = BankAccount(15)
 my_account.withdraw(50)
 print(my_account.balance, my_account.overdrawn())
-import unittest
 
 
 def median(pool):
@@ -136,10 +143,7 @@ def median(pool):
 
 
 if __name__ == '__main__':
-    import doctest
-
     doctest.testmod()
-from itertools import groupby
 
 lines = '''
 This is the
@@ -152,10 +156,11 @@ This is the second.
 for has_chars, frags in groupby(lines, bool):
     if has_chars:
         print(' '.join(frags))
+
+
 # PRINTS:
 # This is the first paragraph.
 # This is the second.
-import csv
 
 
 # need to define cmp function in Python 3
@@ -208,7 +213,6 @@ def solve(n):
 
 for answer in solve(BOARD_SIZE):
     print(answer)
-import itertools
 
 
 def iter_primes():
@@ -239,7 +243,7 @@ dinner_recipe = '''<html><body><table>
 </table></body></html>'''
 
 # From http://effbot.org/zone/element-index.htm
-import xml.etree.ElementTree as etree
+
 
 tree = etree.fromstring(dinner_recipe)
 
@@ -284,7 +288,6 @@ def add_queen(queens):
 queens = add_queen([])
 print(queens)
 print("\n".join(". " * q + "Q " + ". " * (BOARD_SIZE - q - 1) for q in queens))
-import random
 
 guesses_made = 0
 
