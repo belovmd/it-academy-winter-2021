@@ -1,4 +1,4 @@
-# 1 line: Outputt
+# 1 line: Output
 
 
 print('Hello, world!')
