@@ -22,8 +22,8 @@ while babies < 100:
 
 def greet(name):
     print('Hello', name)
-    
-    
+
+
 greet('Jack')
 greet('Jill')
 greet('Bob')
@@ -91,17 +91,17 @@ while bottles_of_beer > 1:
 class BankAccount(object):
     def __init__(self, initial_balance=0):
         self.balance = initial_balance
-        
+
     def deposit(self, amount):
         self.balance += amount
-        
+
     def withdraw(self, amount):
         self.balance -= amount
-        
+
     def overdrawn(self):
         return self.balance < 0
-    
-    
+
+
 my_account = BankAccount(15)
 my_account.withdraw(50)
 print(my_account.balance, my_account.overdrawn())
