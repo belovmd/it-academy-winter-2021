@@ -221,4 +221,4 @@ def median(pool):
         return copy[int((size - 1) / 2)]
     else:
         return (copy[int(size / 2 - 1)] + copy[int(size / 2)]) / 2
->>>>>>> cdb52fbdeb03b13bfede287cf2bf255e330ce257
+
