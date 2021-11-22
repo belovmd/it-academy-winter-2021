@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 import glob
 import re
 import sys
