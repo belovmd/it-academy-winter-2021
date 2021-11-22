@@ -2,7 +2,6 @@ import glob
 import re
 import sys
 from time import localtime
-import unittest
 
 # 1 line: Output
 print('Hello, world!')
@@ -19,8 +18,12 @@ while babies < 100:
     print('This generation has {0} babies'.format(babies))
     parents, babies = (babies, parents + babies)
 # 5 lines: Functions
+
+
 def greet(name):
     print('Hello', name)
+    
+    
 greet('Jack')
 greet('Jill')
 greet('Bob')
@@ -83,16 +86,22 @@ while bottles_of_beer > 1:
                      bottles_of_beer, bottles_of_beer - 1))
     bottles_of_beer -= 1
 # 12 lines: Classes
+
+
 class BankAccount(object):
     def __init__(self, initial_balance=0):
         self.balance = initial_balance
+        
     def deposit(self, amount):
         self.balance += amount
+        
     def withdraw(self, amount):
         self.balance -= amount
+        
     def overdrawn(self):
         return self.balance < 0
+    
+    
 my_account = BankAccount(15)
 my_account.withdraw(50)
 print(my_account.balance, my_account.overdrawn())
-
