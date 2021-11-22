@@ -1,9 +1,9 @@
-while True:
+﻿while True:
     m = int(input("Цена товара, руб.: "))
     n = int(input("Цена товара, коп.: "))
-    l = int(input("Введите количество товара: "))
-    sm = int(m * l)
-    sl = int(n * l)
+    qantity = int(input("Введите количество товара: "))
+    sm = int(m * qantity)
+    sl = int(n * qantity)
     if sl > 100:
         sm = sm + sl // 100
         ssl = int(sl % 100)
