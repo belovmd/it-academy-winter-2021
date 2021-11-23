@@ -109,5 +109,4 @@ venv.bak/
 .gitignore/
 /src/Homework1/
 /src/testf.py
-/.DS_Store
-
+.DS_Store
