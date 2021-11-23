@@ -108,3 +108,6 @@ venv.bak/
 .tox/
 .gitignore/
 /src/Homework1/
+/src/testf.py
+**/.DS_Store
+
