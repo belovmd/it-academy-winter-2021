@@ -5,7 +5,7 @@ activities = {8: 'Sleeping',
               17: 'Working',
               18: 'Commuting',
               20: 'Eating',
-              22: 'Resting' }
+              22: 'Resting'}
 
 time_now = localtime()
 hour = time_now.tm_hour
@@ -16,4 +16,3 @@ for activity_time in sorted(activities.keys()):
         break
 else:
     print('Unknown, AFK or sleeping!')
-
