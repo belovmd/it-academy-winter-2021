@@ -12,3 +12,4 @@ else:
     total_price_rub = total_price_rub + int(converted_to_rub)
     total_price_coin = total_price_coin % 100
     print(total_price_rub, 'рублей', total_price_coin, 'копейки')
+    
