@@ -9,7 +9,6 @@ price_nl = price_n * quantity_l
 divisor_n = 100
 price_div = price_n * quantity_l / divisor_n
 if price_div < 1:
-  print('Общая цена', price_ml, 'рублей', price_nl, 'копеек')
+    print('Общая цена', price_ml, 'рублей', price_nl, 'копеек')
 else:
-  print('Общая цена',price_ml + price_nl // divisor_n , 'рублей', price_nl % divisor_n, 'копеек')
-  
+    print('Общая цена', price_ml + price_nl // divisor_n, 'рублей', price_nl % divisor_n, 'копеек')
