@@ -10,15 +10,11 @@ if n > 0:
         fib_n = fib_1 + fib_2
         fib_2 = fib_1
         fib_1 = fib_n
-    else:
-        fib_n = fib_2
 
 else:
     for counter in range(n, 0):
         fib_n = fib_2 - fib_1
         fib_2 = fib_1
         fib_1 = fib_n
-    else:
-        fib_n = fib_2
 
-print("n число Фибоначи равно: ", fib_n)
+print("n число Фибоначи равно: ", fib_2)
