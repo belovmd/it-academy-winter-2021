@@ -3,7 +3,6 @@
 
 from time import localtime
 
-
 activities = {8: 'Sleeping',
               9: 'Commuting',
               17: 'Working',

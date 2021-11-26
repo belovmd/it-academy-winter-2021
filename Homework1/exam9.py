@@ -4,7 +4,6 @@
 
 import glob
 
-
 # glob supports Unix style pathname extensions
 
 

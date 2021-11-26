@@ -8,4 +8,3 @@ while babies < 145:
 
 
 print(parents)
-print(babies)

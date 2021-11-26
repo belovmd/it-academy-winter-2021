@@ -3,6 +3,7 @@
 
 import csv
 
+
 # need to define cmp function in Python 3
 
 
@@ -20,7 +21,6 @@ with open('stocks.csv', 'w', newline='') as stocksFileW:
         ['YHOO', 'Yahoo! Inc.', 27.38, 0.33, 1.22],
         ['CNET', 'CNET Networks, Inc.', 8.62, -0.13, -1.4901]
     ])
-
 
 # read stocks data, print status messages
 
