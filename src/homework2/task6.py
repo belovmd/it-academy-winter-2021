@@ -1,5 +1,6 @@
-"""Determine if the number is a palindrome (reads from left to right and right to left the same).
+"""Determine if the number is a palindrome.
 
+Palindrome number readed from left to right and right to left the same.
 A positive integer number of arbitrary length.
 The task requires you to work only with numbers
 (without converting the number to a string or anything else)

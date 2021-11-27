@@ -1,4 +1,4 @@
-"""Count the number of lowercase (small) and uppercase (uppercase) letters in the entered line.
+"""Count the number of lowercase and uppercase letters in the entered line.
 
 Consider only English letters.
 """
