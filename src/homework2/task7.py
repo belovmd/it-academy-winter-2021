@@ -11,8 +11,7 @@ if (side2 - side3 < side1 < side2 + side3) and \
         (side1 - side2 < side3 < side1 + side2):
 
     half_per = (side1 + side2 + side3) / 2
-    square = (half_per * (half_per - side1) *
-              (half_per - side2) * (half_per - side3)) ** 0.5
+    square = (half_per * (half_per - side1) * (half_per - side2) * (half_per - side3)) ** 0.5
     print(f'Площадь треугольниква со сторонами {side1, side2, side3} равна: {square}')
 else:
     print("Такого треугольника не существует. Проверьте введённые данные")
