@@ -12,4 +12,4 @@ if (side1 < side2 + side3) and (side2 < side1 + side3) and (side3 < side1 + side
     S = p * (p - side1) * (p - side2) * (p - side3) ** 0.5
     print('It is triangle. Area:', S)
 else:
-    print('It is not triangle')
+    print('Incorrect data: it is not triangle')

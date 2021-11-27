@@ -5,6 +5,7 @@ The task requires you to work only with numbers
 (without converting the number to a string or anything else)
 """
 
+
 number = int(input('Input the number:'))
 number_compute = number
 rebnum = 0

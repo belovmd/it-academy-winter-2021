@@ -1,6 +1,6 @@
 """Print the n-th Fibonacci number.
 
-Useonly temporary variables, cyclic statements, and conditional statements.
+Use only temporary variables, cyclic statements, and conditional statements.
 n - inputed.
 """
 
@@ -8,7 +8,7 @@ n - inputed.
 n = input('Input n:')
 
 
-# Splution 1 (newer and better):
+# Solution 1 (newer and better):
 
 fibnum1 = 1
 fibnum2 = 1
@@ -18,7 +18,7 @@ for i in range(1, int(n)):
 print(fibnum1)
 
 
-# Solution 2 (old):
+# Solution 2 (firs try):
 
 fibnum = 0
 fibnum1 = 1
