@@ -1,6 +1,8 @@
 # 15 lines: itertools
 
 from itertools import groupby
+
+
 lines = '''
 This is the
 first paragraph.
@@ -12,6 +14,3 @@ This is the second.
 for has_chars, frags in groupby(lines, bool):
     if has_chars:
         print(' '.join(frags))
-# PRINTS:
-# This is the first paragraph.
-# This is the second.
