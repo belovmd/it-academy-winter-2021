@@ -29,8 +29,8 @@ while babies < 100:
 # 5 lines: Functions
 def greet(name):
     print('Hello', name)
-    
-    
+
+ 
 greet('Jack')
 greet('Jill')
 greet('Bob')
@@ -117,9 +117,10 @@ class BankAccount(object):
 
     def withdraw(self, amount):
         self.balance -= amount
- 
+
     def overdrawn(self):
         return self.balance < 0
+
 
 my_account = BankAccount(15)
 my_account.withdraw(50)
@@ -134,6 +135,7 @@ def median(pool):
         return copy[int((size - 1) / 2)]
     else:
         return (copy[int(size / 2 - 1)] + copy[int(size / 2)]) / 2
+
 
 class TestMedian(unittest.TestCase):
     def testMedian(self):
