@@ -107,4 +107,4 @@ venv.bak/
 .idea/
 .tox/
 .gitignore/
-.DS_Store
+**/.DS_Store
