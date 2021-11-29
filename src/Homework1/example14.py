@@ -16,6 +16,7 @@ def median(pool):
     else:
         return (copy[int(size / 2 - 1)] + copy[int(size / 2)]) / 2
 
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
