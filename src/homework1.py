@@ -18,7 +18,7 @@ friends = ['john', 'pat', 'gary', 'michael']
 for i, name in enumerate(friends):
     print("iteration {iteration} is {name}".format(iteration=i, name=name))
 
-    
+
 # 4 lines: Fibonacci, tuple assignment
 parents, babies = (1, 1)
 while babies < 100:
@@ -29,6 +29,8 @@ while babies < 100:
 # 5 lines: Functions
 def greet(name):
     print('Hello', name)
+    
+    
 greet('Jack')
 greet('Jill')
 greet('Bob')
@@ -41,7 +43,7 @@ for test_string in ['555-1212', 'ILL-EGAL']:
     else:
         print(test_string, 'rejected')
 
-        
+
 # 7 lines: Dictionaries, generator expressions
 prices = {'apple': 0.40, 'banana': 0.50}
 my_purchase = {
@@ -60,7 +62,7 @@ try:
 except ValueError:
     print('Please supply integer arguments')
 
-    
+
 # 9 lines: Opening files
 # indent your Python code to put into an email
 # glob supports Unix style pathname extensions
@@ -73,7 +75,7 @@ for file_name in sorted(python_files):
             print('    ' + line.rstrip())
     print()
 
-    
+
 # 10 lines: Time, conditionals, from..import, for..else
 activities = {8: 'Sleeping',
               9: 'Commuting',
@@ -90,7 +92,7 @@ for activity_time in sorted(activities.keys()):
 else:
     print('Unknown, AFK or sleeping!')
 
-    
+
 # 11 lines: Triple-quoted strings, while loop
 REFRAIN = '''
 %d bottles of beer on the wall,
@@ -109,12 +111,16 @@ while bottles_of_beer > 1:
 class BankAccount(object):
     def __init__(self, initial_balance=0):
         self.balance = initial_balance
+
     def deposit(self, amount):
         self.balance += amount
+
     def withdraw(self, amount):
         self.balance -= amount
+ 
     def overdrawn(self):
         return self.balance < 0
+
 my_account = BankAccount(15)
 my_account.withdraw(50)
 print(my_account.balance, my_account.overdrawn())
@@ -128,6 +134,7 @@ def median(pool):
         return copy[int((size - 1) / 2)]
     else:
         return (copy[int(size / 2 - 1)] + copy[int(size / 2)]) / 2
+
 class TestMedian(unittest.TestCase):
     def testMedian(self):
         self.assertEqual(median([2, 9, 9, 7, 9, 2, 4, 5, 8]), 7)
@@ -135,4 +142,3 @@ class TestMedian(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    
