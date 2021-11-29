@@ -1,19 +1,21 @@
-
 import glob
 import re
 import sys
 from time import localtime
 
+
+
+
     # 1 line: Output
 
-   print('Hello, world!')
+    print('Hello, world!')
 
 
 
 
     # 2 lines: Input, assignment
 
-   name = input('What is your name?\n')
+    name = input('What is your name?\n')
 print('Hi, %s.' % name)
 
 
