@@ -3,6 +3,7 @@
 
 import xml.etree.ElementTree as etree
 
+
 dinner_recipe = '''<html><body><table>
 <tr><th>amt</th><th>unit</th><th>item</th></tr>
 <tr><td>24</td><td>slices</td><td>baguette</td></tr>
