@@ -1,4 +1,5 @@
 # 16 lines: csv module, tuple unpacking, cmp() built-in
+
 import csv
 
 # need to define cmp function in Python 3
