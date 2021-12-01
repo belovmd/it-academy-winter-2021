@@ -2,7 +2,6 @@ import glob
 import re
 import sys
 from time import localtime
-import unittest
 
 # 1 line: Output
 print('Hello, world!')
@@ -17,15 +16,14 @@ print('Hi, %s.' % name)
 friends = ['john', 'pat', 'gary', 'michael']
 for i, name in enumerate(friends):
     print("iteration {iteration} is {name}".format(iteration=i, name=name))
-    
-    
+
+
 # 4 lines: Fibonacci, tuple assignment
 parents, babies = (1, 1)
 while babies < 100:
     print('This generation has {0} babies'.format(babies))
-    parents, babies = (babies, parents + babies)
-    
-    
+
+
 # 5 lines: Functions
 def greet(name):
     print('Hello', name)
@@ -56,8 +54,7 @@ print('I owe the grocer $%.2f' % grocery_bill)
 
 # 8 lines: Command line arguments, exception handling
 # This program adds up integers that have been passed as arguments in the command line
-
-   try:
+try:
     total = sum(int(arg) for arg in sys.argv[1:])
     print('sum =', total)
 except ValueError:
@@ -67,8 +64,7 @@ except ValueError:
 # 9 lines: Opening files
 # indent your Python code to put into an email
 # glob supports Unix style pathname extensions
-
-   python_files = glob.glob('*.py')
+python_files = glob.glob('*.py')
 for file_name in sorted(python_files):
     print('    ------' + file_name)
     with open(file_name) as f:
