@@ -6,7 +6,7 @@
 side1 = float(input("Введите 1ую сторону треугольника: "))
 side2 = float(input("Введите 2ую сторону треугольника: "))
 side3 = float(input("Введите 3ю сторону треугольника: "))
-if all ([side2 - side3 < side1 < side2 + side3,
+if all([side2 - side3 < side1 < side2 + side3,
          side1 - side3 < side2 < side1 + side3,
          side1 - side2 < side3 < side1 + side2]):
 
