@@ -6,11 +6,9 @@
 side1 = float(input("Введите 1ую сторону треугольника: "))
 side2 = float(input("Введите 2ую сторону треугольника: "))
 side3 = float(input("Введите 3ю сторону треугольника: "))
-if (
-    side2 - side3 < side1 < side2 + side3 and
-    side1 - side3 < side2 < side1 + side3 and
-    side1 - side2 < side3 < side1 + side2
-    ):
+if (side2 - side3 < side1 < side2 + side3
+    and side1 - side3 < side2 < side1 + side3
+    and side1 - side2 < side3 < side1 + side2):
 
     half_per = (side1 + side2 + side3) / 2
     square = (half_per * (half_per - side1) * (half_per - side2) * (half_per - side3)) ** 0.5
