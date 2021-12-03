@@ -10,7 +10,6 @@ if n > 0:
         fib_n = fib_1 + fib_2
         fib_2 = fib_1
         fib_1 = fib_n
-
 else:
     for counter in range(n, 0):
         fib_n = fib_2 - fib_1
