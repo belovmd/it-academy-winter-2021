@@ -3,14 +3,14 @@
 в введенной строке. Учитывать только английские буквы."""
 import string
 
-input_string = input("Введите текст: ")
+str_ = input("Введите текст: ")
 low_case_letters = 0
 upper_case_letters = 0
-alphabet_string = string.ascii_letters
-for char in range(len(input_string)):
-    if (input_string[char].islower() and input_string[char] in alphabet_string):
+alphabet_str_ = string.ascii_letters
+for char in range(len(str_)):
+    if str_[char].islower() and str_[char] in alphabet_str_:
         low_case_letters += 1
-    if (input_string[char].isupper() and input_string[char] in alphabet_string):
+    if str_[char].isupper() and str_[char] in alphabet_str_:
         upper_case_letters += 1
 print(f"{low_case_letters} маленьких букв в строке:")
 print(f"{upper_case_letters} больших букв в строке:")
