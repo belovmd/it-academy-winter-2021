@@ -5,12 +5,12 @@
 Задача требует работать только с числами
 (без конвертации числа в строку или что-нибудь еще)"""
 number = int(input("Введите число: "))
-reverse = 0
+reverse_number = 0
 while number != 0:
     digit = number % 10
-    result = reverse * 10 + digit
+    result = reverse_number * 10 + digit
     number //= 10
-if reverse == number:
+if reverse_number == number:
     print("Palindrome")
 else:
     print("Not a palindrome")
