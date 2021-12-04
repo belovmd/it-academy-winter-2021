@@ -5,7 +5,7 @@
 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711"""
 number_of_fibonacci_number = int(input("Введите номер числа из ряда: "))
 start = 0
-next_after_start_number = 1
+next_number = 1
 for number in range(1, number_of_fibonacci_number):
-    start, next_after_start_number = next_after_start_number, start + next_after_start_number
+    start, next_number = next_number, start + next_number
 print(start)
