@@ -6,19 +6,19 @@ my_string.split ([chars]) returns a list of strings.
 len (list) - the number of items in the list
 """
 
+
+import string
 import re
 
 sentence = input('Sentence: ')
-punctuation = '!"\'#$%&()*+,-./:;<=>?@[]^_`{|}~'
 
 
 # Solution 1:
 
-sentence1 = sentence.split()
-
-for i in range(len(sentence1)):
-    sentence1[i] = sentence1[i].strip(punctuation)
-print('Solution 1:', max(sentence1, key=len), end='\n\n')
+sentence1_split = sentence.split()
+for i in range(len(sentence1_split)):
+    sentence1_split[i] = sentence1_split[i].strip(string.punctuation)
+print('Solution 1:', max(sentence1_split, key=len), end='\n\n')
 
 
 # Solution 2:
@@ -26,10 +26,10 @@ print('Solution 1:', max(sentence1, key=len), end='\n\n')
 # duplication of input, just to make solutions independent
 sentence2 = sentence
 for _ in sentence2:
-    if _ in punctuation:
+    if _ in string.punctuation:
         sentence2 = sentence2.replace(_, '')
-sentence2 = sentence2.split()
-print('Solution 2:', max(sentence2, key=len), end='\n\n')
+sentence2_split = sentence2.split()
+print('Solution 2:', max(sentence2_split, key=len), end='\n\n')
 
 
 # Solution 3 (googled):
