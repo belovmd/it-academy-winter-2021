@@ -1,10 +1,10 @@
 """Write a program that calculates the total price.
 
-Enter M rubles and N pennies price, as well as the quantity S of goods.
-Calculate the total price in rubles and pennies for L goods.
+Enter M rubles and N kopecks price, as well as the quantity S of goods.
+Calculate the total price in rubles and kopecks for L goods.
 Example:
-Input: The price of one item is 3 rubles 20 pennies, count 3 items.
-Output: Total price 9 rubles 60 pennies
+Input: The price of one item is 3 rubles 20 kopecks, count 3 items.
+Output: Total price 9 rubles 60 kopecs
 """
 
 
