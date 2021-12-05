@@ -6,9 +6,8 @@ my_string.split ([chars]) returns a list of strings.
 len (list) - the number of items in the list
 """
 
-
-import string
 import re
+import string
 
 sentence = input('Sentence: ')
 
