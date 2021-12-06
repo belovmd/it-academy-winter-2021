@@ -12,5 +12,3 @@ if reverse_number == fix_number:
     print("This is polindrome")
 else:
     print("This is not polindrome")
-
-
