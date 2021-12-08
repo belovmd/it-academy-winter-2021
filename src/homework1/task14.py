@@ -1,20 +1,16 @@
-# 14 lines: Doctest-based testing
-def median(pool):
+# 15 lines: itertools
+from itertools import groupby
+lines = '''
+This is the
+first paragraph.
 
-    """Statistical median to demonstrate doctest.
-    >>> median([2, 9, 9, 7, 9, 2, 4, 5, 8])
-    6 #change to 7 in order to pass the test
-    """
-    
-    copy = sorted(pool)
-    size = len(copy)
-    if size % 2 == 1:
-        return copy[int((size - 1) / 2)]
-    else:
-        return (copy[int(size / 2 - 1)] + copy[int(size / 2)]) / 2
-
-
-if __name__ == '__main__':
-    import doctest
-
-    doctest.testmod()
+This is the second.
+'''.splitlines()
+# Use itertools.groupby and bool to return groups of
+# consecutive lines that either have content or don't.
+for has_chars, frags in groupby(lines, bool):
+    if has_chars:
+        print(' '.join(frags))
+# PRINTS:
+# This is the first paragraph.
+# This is the second.
