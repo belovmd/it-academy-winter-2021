@@ -1,5 +1,6 @@
 import collections
 
+
 text = 'lorema ipsum dolor sit amet amet amet'
 words = text.split()
 counter = collections.Counter(words)
