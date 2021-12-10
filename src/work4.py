@@ -1,5 +1,7 @@
 from itertools import groupby
 lines = '''
+
+
 This is the
 first paragraph.
 
