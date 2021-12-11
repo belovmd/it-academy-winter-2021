@@ -10,7 +10,7 @@ Output: Total price 9 rubles 60 kopecs
 
 # 1st variant
 
-roubles, kopecks, amount = map(int, input('Input format: roubles kopecks amount: ').split())
+roubles, kopecks, amount = (int(value) for value in input('Input format: roubles kopecks amount: ').split())
 
 sum_roubles = roubles * amount + kopecks * amount // 100
 sum_kopecks = kopecks * amount % 100
@@ -19,8 +19,9 @@ print('Summarized price: ', sum_roubles, 'roubles, ', sum_kopecks, ' kopecks.')
 
 # 2nd variant
 
-price, amount2 = map(float, input('Input price (e.g. 2.65) and amount space separated: ').split())
+price =  float(input('Input price (e.g. 2.65): '))
+amount = int(input('Input amount: '))
 
-sum_roubles2 = int(price * amount2 // 1)
+sum_roubles2 = int(price * amount // 1)
 sum_kopecks2 = int(price * amount % 1 * 100)
 print('Summarized price: ', sum_roubles2, 'roubles, ', sum_kopecks2, ' kopecks.')
