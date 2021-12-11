@@ -6,7 +6,7 @@ For example, if "abc cde def" was entered, then "abcdef" should be output.
 
 import string
 
-sentence = input('Input sentence:').replace(' ','')
+sentence = input('Input sentence:').replace(' ', '')
 output = ''
 
 for _ in sentence:
