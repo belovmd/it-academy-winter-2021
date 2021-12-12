@@ -7,7 +7,6 @@ while True:
     str_ = str(input("Введите строку: "))
     new_str = str()
     for i in str_:
-        if 'a' <= i <= 'z' or 'A' <= i <= 'Z':
-            if i not in new_str:
-                new_str = new_str + i
+        if ('a' <= i <= 'z' or 'A' <= i <='Z') and i not in new_str:
+            new_str += i
     print(new_str)
