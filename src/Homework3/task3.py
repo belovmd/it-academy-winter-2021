@@ -19,5 +19,5 @@ a, b, c = 'a', 2, 'python'
 tpl4 = ([1, 2, 3], )
 print('3. len: ', len(tpl4))
 for i in tpl4:
-    print('3. iter:', i)
+    print('4. iter:', i)
 
