@@ -17,7 +17,7 @@ tpl2 = list(tpl2)
 print('2. ', tpl2)
 a, b, c = 'a', 2, 'python'
 tpl4 = ([1, 2, 3], )
-print('3. len: ', len(tpl4))
+print('4.1. len: ', len(tpl4))
 for i in tpl4:
-    print('3. iter:', i)
+    print('4.2. iter:', i)
 
