@@ -6,9 +6,4 @@ rub = int(input("Рублей: "))
 kop = int(input("Копеек: "))
 pcs = int(input("Штук: "))
 cost = pcs * (rub + kop / 100)
-print("Стоимость за ", pcs, "шт.:", cost, "руб.")
-
-# изначально было такое, но в чате написали, что 3 целых числа нужно ввести
-# cost, quantity = float(input("Введите стоимость: ")), int(input("Введите количество: "))
-# amount = cost * quantity
-# print("Сумма за", quantity, "шт.:", amount, "руб.")
+print("Стоимость за {pcs} шт.: {cost} руб.".format(pcs=pcs, cost=cost))
