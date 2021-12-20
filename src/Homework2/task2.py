@@ -17,4 +17,4 @@ while True:
         if len(str_3[ind]) > len(str_3[ind_max]):
             ind_max = ind
     print(str_3[ind_max])
-
+    
