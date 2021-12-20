@@ -1,4 +1,4 @@
-﻿'''
+'''
 2. Найти самое длинное слово в введенном предложении.
 Учтите что в предложении есть знаки препинания.
 Подсказки:
@@ -17,4 +17,3 @@ while True:
         if len(sentence_separated[ind]) > len(sentence_separated[ind_max]):
             ind_max = ind
     print(sentence_separated[ind_max])
-
