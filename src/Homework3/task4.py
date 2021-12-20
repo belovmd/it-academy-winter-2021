@@ -17,6 +17,6 @@ for element in list_:
         counter_elements = list_.count(element)
         antirepeat.append(element)
         if counter_elements > 1:
-            for faktorial in range(1, counter_elements): # counter_par = (counter_elements - 1)!
+            for faktorial in range(1, counter_elements):  # counter_par = (counter_elements - 1)!
                 counter_par += faktorial
 print(counter_par)
