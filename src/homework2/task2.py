@@ -1,7 +1,7 @@
 import re
 
 text = input('Введите предложение: ')
-text_clear = re.sub(r'[^\w\s]','',text)
+text_clear = re.sub(r'[^\w\s]', '', text)
 lst = text_clear.split()
 max_word = ''
 for word in lst:
