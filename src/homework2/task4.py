@@ -5,10 +5,10 @@ str_ = input("Введите строку: ")
 str_counter_uppercase = 0
 str_counter_lowercase = 0
 
-for i in str_:
-    if "A" <= i <= "Z":
+for elem in str_:
+    if "A" <= elem <= "Z":
         str_counter_uppercase += 1
-    elif "a" <= i <= "z":
+    elif "a" <= elem <= "z":
         str_counter_lowercase += 1
 
 print("Заглавных: {upper}\nПрописных: {lower}".format(upper=str_counter_uppercase,

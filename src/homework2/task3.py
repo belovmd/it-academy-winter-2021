@@ -4,8 +4,8 @@
 str_ = input("Введите строку: ")
 str_result = ""
 
-for i in str_:
-    if i not in str_result and i != " ":
-        str_result += i
+for elem in str_:
+    if elem not in str_result and elem != " ":
+        str_result += elem
 
 print(str_result)
