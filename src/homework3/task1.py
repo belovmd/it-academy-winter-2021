@@ -3,7 +3,7 @@
 # вместо чисел кратный 5 пишет Buzz,
 # а вместо чисел одновременно кратных и 3 и 5 - FizzBuzz
 
-list_ =[elem for elem in range(1,101)]
+list_ = [elem for elem in range(1, 101)]
 result = []
 
 for elem in list_:
