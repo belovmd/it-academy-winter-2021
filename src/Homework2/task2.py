@@ -10,7 +10,7 @@
 import re
 while True:
     sentence = str(input("Введите строку: "))
-    sentence_cleared = re.sub('[^ A-Za-z]', '', sentence)
+    sentence_cleared = re.sub('[^ A-Za-z0-9]', '', sentence)
     sentence_separated = sentence_cleared.split()
     ind_max = int()
     for ind in range(len(sentence_separated)):
