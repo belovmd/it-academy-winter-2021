@@ -11,5 +11,3 @@ list_two = list(tuple_)
 a, b, c = 'a', 2, 'python'
 tuple_two = [1, 2, 3],
 print(len(tuple_two))
-
-

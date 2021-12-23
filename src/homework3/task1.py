@@ -15,5 +15,4 @@ for elem in list_:
         result.append("Fizz")
     else:
         result.append(elem)
-
 print(result)
