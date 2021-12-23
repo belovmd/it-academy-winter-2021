@@ -19,5 +19,5 @@ for i in str_:
     if 'A' <= i <= 'Z':
         dict_["propis"] += 1
     if 'a' <= i <= 'z':
-        dict_["stroch"] += 1      
+        dict_["stroch"] += 1
 print(f'{dict_["propis"]} прописных букв, {dict_["stroch"]} строчных букв')
