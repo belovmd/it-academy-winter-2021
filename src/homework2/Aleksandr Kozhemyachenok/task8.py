@@ -1,10 +1,13 @@
-# Example_1(Elementary)
-# You are given a sequence of strings.
-# You should join these strings into a chunk of text where the initial strings are separated by commas.
-# As a joke on the right handed robots, you should replace all cases of the words "right" with the word "left",
-# even if it's a part of another word. All strings are given in lowercase.
-# Input: A sequence of strings.
-# Output: The text as a comma-separated string.
+""" Example_1(Elementary)
+You are given a sequence of strings.
+You should join these strings into a chunk of text where the initial
+strings are separated by commas.As a joke on the right handed robots,
+you should replace all cases of the words "right" with the word "left",
+even if it's a part of another word. All strings are given in lowercase.
+Input: A sequence of strings.
+Output: The text as a comma-separated string.
+"""
+
 
 def left_join(phrases: tuple) -> str:
     return ','.join(phrases).replace('right', 'left')
@@ -24,10 +27,13 @@ if __name__ == "__main__":
     print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
 
 
-# Example_2 (Elementary+)
-# In a given string you should reverse every word, but the words should stay in their places.
-# Input: A string.
-# Output: A string.
+"""
+Example_2 (Elementary+)
+In a given string you should reverse every word, but the words should stay in their places.
+Input: A string.
+Output: A string.
+"""
+
 
 def backward_string_by_word(text: str) -> str:
     return ' '.join(word[::-1] for word in text.split(' '))
@@ -46,11 +52,15 @@ if __name__ == '__main__':
     print("Coding complete? Click 'Check' to earn cool rewards!")
 
 
-# Example_3 (Elementary+)
-# You have a string that consist only of digits. You need to find how many zero digits ("0") are at the beginning
-# of the given string.
-# Input: A string, that consist of digits.
-# Output: An Int.
+"""
+Example_3 (Elementary+)
+You have a string that consist only of digits. You need to find how many zero digits
+("0") are at the beginning
+of the given string.
+Input: A string, that consist of digits.
+Output: An Int.
+"""
+
 
 def beginning_zeros(number: str) -> int:
     count = 0
