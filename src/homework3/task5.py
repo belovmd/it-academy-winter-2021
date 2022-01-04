@@ -5,4 +5,4 @@
 lst = [1, 5, 7, 4, 1, 5, 3]
 for element in range(len(lst)):
     if lst.count(lst[element]) == 1:
-      print(lst[element])
+        print(lst[element])

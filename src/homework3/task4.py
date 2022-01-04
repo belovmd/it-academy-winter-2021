@@ -9,5 +9,5 @@ lst = [2, 6, 8, 2, 9, 6, 2, 2, 6]
 counter = 0
 for element in lst:
     if lst.count(element) > 1:
-      counter += lst.count(element) - 1
+        counter += lst.count(element) - 1
 print(counter // 2)
