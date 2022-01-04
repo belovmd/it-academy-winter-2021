@@ -8,4 +8,4 @@ for elem in str_:
     if elem not in str_result and elem != " ":
         str_result += elem
 
-print(str_result)
+print("Строка без повторяющихся символов:", str_result)

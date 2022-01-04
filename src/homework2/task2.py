@@ -3,10 +3,9 @@
 import string
 
 str_ = input("Введите строку: ").translate(str.maketrans("", "", string.punctuation))
-lst_ = str_.split()
 long_word = ""
 
-for word in lst_:
+for word in str_.split():
     if len(word) > len(long_word):
         long_word = word
 
