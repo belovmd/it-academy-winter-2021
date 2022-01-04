@@ -86,8 +86,8 @@ n = int(input("Count of baskets "))
 w = int(input("Weight "))
 d = int(input("False weight "))
 p = int(input("Total weight "))
-dif = sum(range(1, n))*w - p
+dif = sum(range(1, n)) * w - p
 if not dif:
     print(n)
 else:
-    print(int(dif/d))
+    print(int(dif / d))

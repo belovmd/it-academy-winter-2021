@@ -9,4 +9,3 @@ for char in src_:
     if "A" <= char <= "Z":
         upper += 1
 print("Number of lowercase:", lower, "uppercase:", upper)
-
