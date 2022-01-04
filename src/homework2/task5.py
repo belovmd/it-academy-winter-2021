@@ -1,4 +1,4 @@
-# Print nth Fibonacci number using only temporary variables, looping statements and conditional statements
+# Print nth Fibonacci number using only temporary variables, looping and conditional statements
 
 
 index = int(input('Which fibonacci number do you wanna see? '))

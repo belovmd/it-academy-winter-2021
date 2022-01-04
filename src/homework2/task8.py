@@ -1,5 +1,7 @@
-# Register on one (or several) of the sites: (hackerrank.com) solve 1-5 problems of the Elementary and advanced level.
+# Register on one (or several) of the sites: (hackerrank.com) solve
+# 1-5 tasks of the Elementary and advanced level.
 # Place 3 easy and 2 hard tasks of your choice in the Pull Request.
+
 
 # easy
 
@@ -17,7 +19,8 @@ def swap_case(s):
 
 
 # Ms. Gabriel Williams is a botany professor at District College.
-# One day,she asked her student Mickey to compute the average of all the plants with distinct heights in her greenhouse.
+# One day,she asked her student Mickey to compute
+# the average of all the plants with distinct heights in her greenhouse.
 
 def average(array):
     st = set(array)
@@ -31,11 +34,14 @@ if __name__ == '__main__':
     print(result)
 
 
-# Vasya offers a version of his four-digit number, consisting of different numbers, and Petya gives Vasya a hint:
-# he tells the number of bulls and cows. Bulls is the number of digits in the number proposed by Vasya that coincide in
+# Vasya offers a version of his four-digit number,
+# consisting of different numbers, and Petya gives Vasya a hint:
+# he tells the number of bulls and cows.
+# Bulls is the number of digits in the number proposed by Vasya that coincide in
 # meaning and are in the correct position in the number conceived by Petya.
-# Cows - the number of digits that match in value, but are in the wrong position. The only line contains two four-digit
-# natural numbers, you need to output two integers separated by a space - the number of bulls and cows
+# Cows - the number of digits that match in value, but are in the wrong position.
+# The only line contains two four-digit natural numbers, you need to output two integers
+# separated by a space - the number of bulls and cows
 
 bulls = 0
 cows = 0
@@ -51,9 +57,11 @@ print(bulls, cows)
 
 # hard
 
-# Petya builds stairs from cubes. The staircase consists of several towers of blocks being built next to each other,
+# Petya builds stairs from cubes.
+# The staircase consists of several towers of blocks being built next to each other,
 # each of which is exactly one cube higher than the previous one.
-# It is required to determine the height of the last step in the cubes by the number of cubes available to the Petya.
+# It is required to determine the height of the last step
+# in the cubes by the number of cubes available to the Petya.
 
 k = int(input())
 size = 0
@@ -68,8 +76,9 @@ while k:
 print(step)
 
 
-# N baskets contain gold coins. In all but one of the baskets, the coins weigh w grams. In one basket the coins are
-# counterfeit and weigh w – d grams.The wizard takes 1 coin from the first basket, 2 coins from the second basket,
+# N baskets contain gold coins. In all but one of the baskets, the coins weigh w grams.
+# In one basket the coins are# counterfeit and weigh w – d grams.
+# The wizard takes 1 coin from the first basket, 2 coins from the second basket,
 # and so on, and finally N-1 coins from the (N-1) th basket. He takes nothing from the N-th basket.
 # He weighs the coins he has taken and immediately points to the basket of counterfeit coins.
 

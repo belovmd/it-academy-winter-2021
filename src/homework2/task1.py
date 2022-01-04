@@ -1,6 +1,3 @@
-
-
-
 m = int(input('Enter price in rubles '))
 n = int(input('Enter price in kopecks '))
 s = int(input('Enter quantity '))
