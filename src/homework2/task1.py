@@ -1,3 +1,8 @@
+# Write a program that calculates the total price.
+# Enter m rubles and n kopecks price, as well as the quantity s of goods.
+# Calculate the total price in rubles and kopecks for q goods.
+
+
 m = int(input('Enter price in rubles '))
 n = int(input('Enter price in kopecks '))
 s = int(input('Enter quantity '))
