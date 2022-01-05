@@ -43,8 +43,7 @@ print("".join(char + char for char in str_))
 # Output: 2
 input_number = int(input("Enter the number: "))
 str_ = str(input_number)
-zeros_amount = len(str_) - \
-               len(str_.rstrip("0"))
+zeros_amount = len(str_) - len(str_.rstrip("0"))
 print(zeros_amount)
 
 # task 3
