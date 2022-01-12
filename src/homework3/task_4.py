@@ -14,4 +14,3 @@ for elem in range(len(str_ran)):
         if str_ran[elem] == str_ran[elem1]:
             count += 1
 print(count)
-

@@ -9,4 +9,3 @@ for elem in list_:
     if elem not in new_list:
         new_list.append(elem)
 print(new_list)
-
