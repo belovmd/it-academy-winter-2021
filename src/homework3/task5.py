@@ -3,8 +3,8 @@
 # Элементы нужно выводить в том порядке, в котором они встречаются в списке.
 
 lst_ = ["abc", 1, 2, 2, 3, 4, 5, 3, "elem", "abc"]
-
 lst_result = []
+
 for elem in lst_:
     if elem not in lst_result:
         lst_result.append(elem)
