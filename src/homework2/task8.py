@@ -21,22 +21,25 @@ def end_zeros(num: int) -> int:
             return True
         return False
 
-# 3. You are given a non-empty list of integers (X). For this task, you should return a list consisting
-# of only the non-unique elements in this list. To do so you will need to remove all unique elements
-# (elements which are contained in a given list only once). When solving this task, do not change the
-# order of the list. Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].
+# 3. You are given a non-empty list of integers (X). For this task, you should
+# return a list consisting of only the non-unique elements in this list. 
+# To do so you will need to remove all unique elements
+# (elements which are contained in a given list only once). 
+# When solving this task, do not change the order of the list.
+# Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].
 # Input: A list of integers.
 # Output: An iterable of integers.
 
         def checkio(data: list) -> list:
             new_list = []
             for i in list(data):
-                 if data.count(i) > 1:
-                     new_list.append(i)
+                if data.count(i) > 1:
+                    new_list.append(i)
             return new_list
 
-# 4. Split the string into pairs of two characters. If the string contains an odd number of characters,
-# then the missing second character of the final pair should be replaced with an underscore ('_').
+# 4. Split the string into pairs of two characters. If the string contains an odd
+# number of characters, then the missing second character of the final pair should
+# be replaced with an underscore ('_').
             def split_pairs(a):
                 new_list_ = []
                 for i in range(0, len(a), 2):
@@ -47,14 +50,16 @@ def end_zeros(num: int) -> int:
                         new_list_.append(element)
                 return new_list_
 
-# 5. Every true traveler must know how to do 3 things: fix the fire, find the water and extract useful
-# information from the nature around him. Programming won't help you with the fire and water, but when
+# 5. Every true traveler must know how to do 3 things: fix the fire,
+# find the water and extract useful information from the nature around him.
+# Programming won't help you with the fire and water, but when
 # it comes to the information extraction - it might be just the thing you need.
-# Your task is to find the angle of the sun above the horizon knowing the time of the day. Input data:
-# the sun rises in the East at 6:00 AM, which corresponds to the angle of 0 degrees. At 12:00 PM the
-# sun reaches its zenith, which means that the angle equals 90 degrees. 6:00 PM is the time of the sunset
-# so the angle is 180 degrees. If the input will be the time of the night (before 6:00 AM or after 6:00 PM),
-# your function should return - "I don't see the sun!".
+# Your task is to find the angle of the sun above the horizon knowing
+# the time of the day. Input data: the sun rises in the East at 6:00 AM,
+# which corresponds to the angle of 0 degrees. At 12:00 PM the sun reaches its
+# zenith, which means that the angle equals 90 degrees. 6:00 PM is the time of the
+# sunset so the angle is 180 degrees. If the input will be the time of the night
+# (before 6:00 AM or after 6:00 PM), your function should return - "I don't see the sun!".
 
                 from typing import Union
 

@@ -3,6 +3,6 @@
 
 n = int(input('Введите число'))
 fib1 = fib2 = 1
-for element in range(3, n+1):
+for element in range(3, n + 1):
     fib1, fib2 = fib2, fib1 + fib2
 print("Значение этого элемента:", fib2)
