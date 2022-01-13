@@ -22,9 +22,9 @@ def end_zeros(num: int) -> int:
         return False
 
 # 3. You are given a non-empty list of integers (X). For this task, you should
-# return a list consisting of only the non-unique elements in this list. 
+# return a list consisting of only the non-unique elements in this list.
 # To do so you will need to remove all unique elements
-# (elements which are contained in a given list only once). 
+# (elements which are contained in a given list only once).
 # When solving this task, do not change the order of the list.
 # Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].
 # Input: A list of integers.
@@ -43,7 +43,7 @@ def end_zeros(num: int) -> int:
             def split_pairs(a):
                 new_list_ = []
                 for i in range(0, len(a), 2):
-                    element = a[i:i+2]
+                    element = a[i:i + 2]
                     if len(element) == 1:
                         new_list_.append(element + '_')
                     else:
