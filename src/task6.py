@@ -1,8 +1,11 @@
-n = int(input())
-if n == 0:
-    print(0)
+a = int(input("Введите число:"))
+number = a
+rev = 0
+while a > 0:
+    dig = a % 10
+    rev = rev * 10 + dig
+    a = a // 10
+if(number == rev):
+    print("Это палиндром!")
 else:
-    a, b = 0, 1
-    for i in range(2, n + 1):
-        a, b = b, a + b
-    print(b)
+    print("Это не палиндром!")
