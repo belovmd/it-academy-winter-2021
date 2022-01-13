@@ -17,7 +17,6 @@ print(lst_gen2.pop(1))
 # 5 Скопируйте список и добавьте в него элемент '2a' так,
 # чтобы в исходном списке этого элемента не было.
 lst_gen3 = lst_gen2.copy()
-
 lst_gen3.append("2a")   # или lst_gen3.insert(1, "2a")
 print(lst_gen2)
 print(lst_gen3)
