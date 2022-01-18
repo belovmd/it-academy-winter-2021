@@ -1,5 +1,6 @@
 # Вводится строка. Требуется удалить из нее повторяющиеся символы и все пробелы.
 # Например, если было введено "abc cde def", то должно быть выведено "abcdef".
+
 init_string = 'abc cde def'
 new_string = init_string.replace(' ', '')
 my_list = list(new_string)
