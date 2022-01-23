@@ -4,5 +4,5 @@
 а значениями кубы этих чисел.
 Задачу поместите в файл task1.py в папке src/homework4.
 '''
-dict_ = {key_:key_ ** 3 for key_ in range(1, 21)}
+dict_ = {key_ : key_ ** 3 for key_ in range(1, 21)}
 print(dict_)
