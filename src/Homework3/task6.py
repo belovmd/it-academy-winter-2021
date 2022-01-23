@@ -15,4 +15,3 @@ for i in list_:
         list_.remove(i)
         list_.append(i)
 print(list_)
-

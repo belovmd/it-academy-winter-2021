@@ -20,4 +20,3 @@ tpl4 = ([1, 2, 3], )
 print('4.1. len: ', len(tpl4))
 for i in tpl4:
     print('4.2. iter:', i)
-
