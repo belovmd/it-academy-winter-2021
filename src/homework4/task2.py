@@ -8,7 +8,7 @@ for _ in range(n):
     str_ = input('Введите страну и города: ')
     first_space = str_.find(' ')
     country = str_[:first_space]
-    cities = str_[first_space+1:].split()
+    cities = str_[first_space + 1:].split()
     dct[country] = cities
 list1 = dct.items()
 m = int(input('Введите кол-во запросов: '))
