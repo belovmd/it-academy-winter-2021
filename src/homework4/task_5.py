@@ -44,8 +44,11 @@ for student in range(amount_students):
     everybody_knows &= languages_list[student]
     somebody_knows |= languages_list[student]
 
-print('Number of languages known to all students: ', len(everybody_knows))
+num_everybody_knows = len(everybody_knows)
+num_somebody_knows = len(somebody_knows)
+
+print('Number of languages known to all students: ', num_everybody_knows)
 print('Languages list: ', list(everybody_knows))
 
-print('Number of languages at least one student knows: ', len(somebody_knows))
+print('Number of languages at least one student knows: ', num_somebody_knows)
 print('Languages list: ', list(somebody_knows))
