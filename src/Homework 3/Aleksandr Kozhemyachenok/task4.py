@@ -3,6 +3,6 @@ len_l = len(list_1)
 container = 0
 for i in range(len_l):
     for j in range(i + 1, len_l):
-        if a[i] == a[j]:
+        if list_1[i] == list_1[j]:
             container += 1
 print(container)
