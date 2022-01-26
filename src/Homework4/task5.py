@@ -40,8 +40,8 @@ for list_ in dict_pupils_langs.values():
     summ.extend(list_)
 key = int(0)
 set_all = dict_pupils_langs[0]
-while key < (len(dict_pupils_langs) - 1):
-    set_all = set_all & dict_pupils_langs[key + 1]
+while key < len(dict_pupils_langs):
+    set_all = set_all & dict_pupils_langs[key]
     key += 1
 else:
     print(len(set_all))
