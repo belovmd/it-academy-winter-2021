@@ -4,15 +4,6 @@
 Задачу поместите в файл task4.py в папке src/homework2.
 
 '''
-propis = int()
-stroch = int()
-str_ = str(input("Введите строку: "))
-for i in str_:
-    if 'A' <= i <= 'Z':
-        propis += 1
-    if 'a' <= i <= 'z':
-        stroch += 1
-print(f'{propis} прописных букв, {stroch} строчных букв')
 dict_ = {"propis": 0, "stroch": 0}
 str_ = str(input("Введите строку: "))
 for i in str_:
