@@ -18,15 +18,3 @@ while True:
             b = b + a
             if i == n:
                 print(b)
-'''
-while True:
-    n = int(input("Введите n: "))
-    spisok = []
-    a = int()
-    spisok.append(1)
-    spisok.append(1)
-    for i in range(2, n):
-        a = spisok[i - 1] + spisok[i - 2]
-        spisok.append(a)
-    print(spisok[n - 1])
-'''
