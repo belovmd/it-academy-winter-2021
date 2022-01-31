@@ -8,5 +8,4 @@ lst_result = []
 for elem in lst_:
     if elem not in lst_result:
         lst_result.append(elem)
-
-print(lst_result)
+        print(elem)
