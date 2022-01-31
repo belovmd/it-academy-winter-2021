@@ -10,11 +10,11 @@
 
 '''
 import copy
-list1 = [el1 + el2 for el1 in ['a', 'b'] for el2 in ['b', 'c', 'd']]
+list1 = [el1 + el2 for el1 in 'ab' for el2 in ['b', 'c', 'd']]
 print('1. ', list1)
 list2 = list1[::2]
 print('2. ', list2)
-list3 = [str(el) + 'a' for el in range(1, 5)]
+list3 = [str(el) + 'a' for el in '1234']
 print('3. ', list3)
 print('4. ', list3.pop(1))
 list5 = copy.copy(list3)
