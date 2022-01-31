@@ -19,5 +19,5 @@ print('3. Assigned variables: ', a, b, c)
 
 tuple_ = ([1, 2, 3],)
 print('4. Tuple length: ', len(tuple_), end=' | Iterated tuple: ')
-for _ in tuple_[0]:
-    print(_, end=', ')
+for element in tuple_[0]:
+    print(element, end=', ')

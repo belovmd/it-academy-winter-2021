@@ -9,8 +9,8 @@ Print the resulting list."""
 
 lst_ = [3, 0, 0, 1, 2, 1, 10, 0, 3, 1, 1, 0, 4, 1, 0]
 
-for _ in lst_:
-    if not _:
-        lst_.remove(_)
-        lst_.append(_)
+for element in lst_:
+    if not element:
+        lst_.remove(element)
+        lst_.append(element)
 print(lst_)

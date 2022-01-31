@@ -6,25 +6,12 @@ and instead of numbers simultaneously divisible by both 3 and 5,
 it writes FizzBuzz.
 """
 
-for _ in range(101):
-    if _ % 3 and _ % 5:
-        print(_)
-    elif _ % 5:
+for number in range(101):
+    if number % 3 and number % 5:
+        print(number)
+    elif number % 5:
         print('Fizz')
-    elif _ % 3:
+    elif number % 3:
         print('Buzz')
     else:
         print('FizzBuzz')
-
-
-""" The one below is less readable, but for me is more logical"""
-
-for _ in range(101):
-    if not _ % 3 and not _ % 5:
-        print('FizzBuzz')
-    elif not _ % 3:
-        print('Fizz')
-    elif not _ % 5:
-        print('Buzz')
-    else:
-        print(_)

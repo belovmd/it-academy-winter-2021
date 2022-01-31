@@ -12,10 +12,9 @@ input_ = '1 1 1 2 2 8 8 8 8 8 2 4 2 1 1'
 input_split = input_.split()
 dict_ = {}
 pairs = 0
-for _ in input_split:
-    dict_.update(dict.fromkeys(_, input_split.count(_)))
+for value in input_split:
+    dict_.update(dict.fromkeys(value, input_split.count(value)))
 
-for _ in dict_:
-    # Number of pairs = (Total number of items X Total number of items - 1) / 2
-    pairs = pairs + (dict_[_] * (dict_[_] - 1)) / 2
+for key in dict_:
+    pairs = pairs + (dict_[key] * (dict_[key] - 1)) / 2
 print(pairs)
