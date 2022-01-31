@@ -19,7 +19,7 @@ country_count = int(input('Input the number of countries: '))
 
 country_town = dict()
 for num in range(country_count):
-    input_country_town = input('Enter the country and the cities in it with a space: ').split()
+    input_country_town = input('Enter country and towns: ').split()
     country = input_country_town[0]
     town = input_country_town[1:]
     country_town.update({country: town})
