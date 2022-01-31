@@ -2,7 +2,8 @@
 
 A list of numbers is given.
 Count how many pairs of elements in it are equal to each other.
-Any two elements equal to each other are considered to form one pair to be counted.
+Any two elements equal to each other are considered,
+to form one pair to be counted.
 The input is a string of numbers separated by spaces.
 The output is the number of pairs.
 Important: 1 1 1 1 is 3 pairs, 1 1 1 1 is 6 pairs"""

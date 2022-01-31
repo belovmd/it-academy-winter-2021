@@ -1,8 +1,11 @@
 """List practice.
 
-1. Use the list generator to get the following: ['ab', 'ac', 'ad', 'bb', 'bc', 'bd'].
-2. Use the previous slice list to get the following: ['ab', 'ad', 'bc'].
-3. Use the list generator to get the following ['1a', '2a', '3a', '4a'].
+1. Use the list generator to get the following:
+   ['ab', 'ac', 'ad', 'bb', 'bc', 'bd'].
+2. Use the previous slice list to get the following:
+   ['ab', 'ad', 'bc'].
+3. Use the list generator to get the following
+   ['1a', '2a', '3a', '4a'].
 4. With one line remove item '2a' from the previous list and print it.
 5. Copy the list and add element '2a' to it,
    so that the original list does not contain this element."""
