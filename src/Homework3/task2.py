@@ -10,7 +10,7 @@
 
 '''
 import copy
-list1 = [el1 + el2 for el1 in 'ab' for el2 in ['b', 'c', 'd']]
+list1 = [el1 + el2 for el1 in 'ab' for el2 in 'bcd']
 print('1. ', list1)
 list2 = list1[::2]
 print('2. ', list2)
