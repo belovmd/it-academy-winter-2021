@@ -5,7 +5,7 @@
 3. Use the list generator to get the following ['1a', '2a', '3a', '4a'].
 4. With one line remove item '2a' from the previous list and print it.
 5. Copy the list and add element '2a' to it,
-so that the original list does not contain this element."""
+   so that the original list does not contain this element."""
 
 lst_ = [(a + b) for a in 'ab' for b in 'bcd']
 print('1. Generated list: ', lst_)
@@ -21,4 +21,4 @@ print('4. List with removed elemetn: ', lst_num)
 
 lst_copy = lst_num.copy()
 lst_copy.append('2a')
-print('5. Source list: ', lst_num, '\n   Copied list: ',  lst_copy)
+print('5. Source list: ', lst_num, '\n   Copied list: ', lst_copy)
