@@ -6,12 +6,14 @@ If the sides define a triangle, find its area.
 If not, display an invalid data message.
 """
 
+input_ = input('Input triangle sides separately: ').split()
+side1, side2, side3 = (int(value) for value in input_)
 
-side1, side2, side3 = (int(value) for value in input('Input triangle sides separately: ').split())
-
-if (side1 < side2 + side3) and (side2 < side1 + side3) and (side3 < side1 + side2):
+if ((side1 < side2 + side3) and
+        (side2 < side1 + side3) and
+        (side3 < side1 + side2)):
     p = (side1 + side2 + side3) / 2
-    S = p * (p - side1) * (p - side2) * (p - side3) ** 0.5
-    print('It is triangle. Area:', S)
+    area = (p * (p - side1) * (p - side2) * (p - side3)) ** 0.5
+    print('It is triangle. Area:', area)
 else:
     print('Incorrect data: it is not triangle')
