@@ -7,8 +7,8 @@ side_b = int(input("Сторона B: "))
 side_c = int(input("Сторона C: "))
 
 if side_a + side_b > side_c and side_a + side_c > side_b and side_b + side_c > side_a:
-    half_m = (side_a + side_b + side_c) / 2     # Формула Герона
-    square = (half_m * half_m - side_a) * (half_m - side_b) * (half_m - side_c) ** 0.5
+    half_m = (side_a + side_b + side_c) / 2
+    square = (half_m * (half_m - side_a) * (half_m - side_b) * (half_m - side_c)) ** 0.5
     print("Треугольник существует, его площадь ровна:", square)
 else:
     print("Треугольник не существует")

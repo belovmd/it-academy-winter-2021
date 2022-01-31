@@ -6,5 +6,11 @@
 rub = int(input("Рублей: "))
 kop = int(input("Копеек: "))
 pcs = int(input("Штук: "))
-cost = pcs * (rub + kop / 100)
-print("Стоимость за {pcs} шт.: {cost} руб.".format(pcs=pcs, cost=cost))
+
+cost = pcs * (100 * rub + kop)
+cost_rub = cost // 100
+cost_kop = cost % 100
+
+print("Общая цена за {pcs} шт.: {rub} руб. {kop} коп.".format(pcs=pcs,
+                                                              rub=cost_rub,
+                                                              kop=cost_kop))
