@@ -5,10 +5,10 @@
 a = float(input('Сторона треугольника, см'))
 b = float(input('Сторона треугольника, см'))
 c = float(input('Сторона треугольника, см'))
-p = (a + b + c) / 2
-square = (p * (p - a) * (p - b) * (p - c)) ** 0.5
 if a + b > c and b + c > a and c + a > b:
     if a > 0 and b > 0 and c > 0:
+        p = (a + b + c) / 2
+        square = (p * (p - a) * (p - b) * (p - c)) ** 0.5
         print('triangle,', 'square =', square)
 else:
     print('invalid data, not triangle')

@@ -42,7 +42,7 @@ def end_zeros(num: int) -> int:
 # be replaced with an underscore ('_').
             def split_pairs(a):
                 new_list_ = []
-                for i in range(0, len(a), 2):
+                for i in range(len(a), 2):
                     element = a[i:i + 2]
                     if len(element) == 1:
                         new_list_.append(element + '_')
