@@ -15,6 +15,7 @@ for _ in input_split:
     dict_.update(dict.fromkeys(_, input_split.count(_)))
 
 for _ in dict_:
-#Number of pairs = (Total number of items X Total number of items - 1) / 2
+
+    #Number of pairs = (Total number of items X Total number of items - 1) / 2
     pairs = pairs + (dict_[_] * (dict_[_] - 1)) / 2
 print(pairs)
