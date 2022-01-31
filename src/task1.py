@@ -1,6 +1,7 @@
 """Write a program that prints numbers from 1 to 100.
 
-But instead of numbers divisible by 3 it writes Fizz, instead of numbers divisible by 5 it writes Buzz, and instead of numbers simultaneously divisible by both 3 and 5 it writes FizzBuzz.
+But instead of numbers divisible by 3 it writes Fizz, instead of numbers divisible by 5 it writes Buzz,
+and instead of numbers simultaneously divisible by both 3 and 5 it writes FizzBuzz.
 """
 
 for _ in range(101):
@@ -12,7 +13,6 @@ for _ in range(101):
         print('Buzz')
     else:
         print('FizzBuzz')
-
 
 
 """ The one below is less readeable, but for me is more logical"""
