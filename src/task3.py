@@ -18,6 +18,6 @@ a, b, c = 'a', 2, 'python'
 print('3. Assigned variables: ', a, b, c)
 
 tuple_ = ([1, 2, 3],)
-print('4. Tuple lenght: ', len(tuple_), end=' | Iterated tuple: ')
+print('4. Tuple length: ', len(tuple_), end=' | Iterated tuple: ')
 for _ in tuple_[0]:
     print(_, end=', ')

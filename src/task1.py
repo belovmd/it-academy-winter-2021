@@ -16,14 +16,14 @@ for _ in range(101):
         print('FizzBuzz')
 
 
-""" The one below is less readeable, but for me is more logical"""
+""" The one below is less readable, but for me is more logical"""
 
-# for _ in range(101):
-#     if not _ % 3  and not _ % 5:
-#         print('FizzBuzz')
-#     elif not _ % 3:
-#         print('Fizz')
-#     elif not _ % 5:
-#         print('Buzz')
-#     else:
-#         print(_)
+for _ in range(101):
+    if not _ % 3  and not _ % 5:
+        print('FizzBuzz')
+    elif not _ % 3:
+        print('Fizz')
+    elif not _ % 5:
+        print('Buzz')
+    else:
+        print(_)
