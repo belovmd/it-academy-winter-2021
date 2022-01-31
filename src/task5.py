@@ -1,4 +1,5 @@
 """Unique items in the list.
+
 A list is given. Output the elements that occur only once in the list.
 The items should be printed in the order in which they appear in the list."""
 
