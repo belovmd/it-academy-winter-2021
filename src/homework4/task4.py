@@ -4,11 +4,11 @@
 
 import random
 
-randomlist1 = random.sample(range(20, 40), 15)
-randomlist2 = random.sample(range(30, 50), 15)
+random_list_1 = random.sample(range(20, 40), 15)
+random_list_2 = random.sample(range(30, 50), 15)
 
-list1 = set(randomlist1)
-list2 = set(randomlist2)
+list1 = set(random_list_1)
+list2 = set(random_list_2)
 
 print('List1: ', list1)
 print('List2: ', list2)
