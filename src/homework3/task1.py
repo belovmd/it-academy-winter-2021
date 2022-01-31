@@ -3,11 +3,11 @@
 # вместо чисел кратный 5 пишет Buzz, а вместо чисел одновременно кратных и 3 и 5 - FizzBuzz
 
 for elem in range(1, 101):
-    if elem % 3 == 0 and elem % 5 == 0:
+    if not elem % 3 and not elem % 5:
         print("FizzBuzz")
-    elif elem % 3 == 0:
+    elif not elem % 3:
         print("Fizz")
-    elif elem % 5 == 0:
+    elif not elem % 5:
         print("Buzz")
     else:
         print(elem)
