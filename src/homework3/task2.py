@@ -20,7 +20,7 @@ lst_num = [num + 'a' for num in '1234']
 print('3. List with numbers: ', lst_num)
 
 lst_num.pop(1)
-print('4. List with removed elemetn: ', lst_num)
+print('4. List with removed element: ', lst_num)
 
 lst_copy = lst_num.copy()
 lst_copy.append('2a')
