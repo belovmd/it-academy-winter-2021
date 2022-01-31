@@ -13,4 +13,3 @@ def disemvowel(string_):
             string_ = str_
     return string_
 
-
