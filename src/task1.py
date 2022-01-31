@@ -19,7 +19,7 @@ for _ in range(101):
 """ The one below is less readable, but for me is more logical"""
 
 for _ in range(101):
-    if not _ % 3  and not _ % 5:
+    if not _ % 3 and not _ % 5:
         print('FizzBuzz')
     elif not _ % 3:
         print('Fizz')
