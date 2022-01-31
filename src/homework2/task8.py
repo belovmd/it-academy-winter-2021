@@ -12,4 +12,3 @@ def disemvowel(string_):
             str_ = string_.replace(elem, "")
             string_ = str_
     return string_
-
