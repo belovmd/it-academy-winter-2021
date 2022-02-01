@@ -8,7 +8,7 @@ n = int(input('input number pupils n = '))
 
 
 for i in range(n):
-    a = {input('input name languages ...  ') for j in range(int(input('input number languages mi = ')))}
+    a = {input('input name lang. ...  ') for j in range(int(input('input number lang. mi = ')))}
     if n == 1:
         least_one.update(a)
         all_lang.update(a)
