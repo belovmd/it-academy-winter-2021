@@ -7,16 +7,6 @@
 
 list_ = [1, 0, 0, 7, 4, 0, 6, 0]
 
-# 1 version
-
-for elem in list_:
-    if elem == 0:
-        list_.remove(elem)
-        list_.append(0)
-print(list_)
-
-# 2 version
-
 number_zero = list_.count(0)
 for elem in range(number_zero):
     list_.remove(0)

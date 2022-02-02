@@ -7,7 +7,7 @@ list_ = [elem for elem in range(1, 101)]
 result = []
 
 for elem in list_:
-    if not(elem % 3) and not(elem % 5):
+    if not(elem % 15):
         result.append("FizzBuzz")
     elif not(elem % 5):
         result.append("Buzz")
