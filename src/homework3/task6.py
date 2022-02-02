@@ -3,4 +3,8 @@
 # дополнительный список использовать нельзя, задачу нужно выполнить за один проход по списку. Распечатайте полученный список.
 
 lst = [1, 5, 0, 0, 3, 0, 3, 0]
-print([element for element in lst if element != 0] +[0]*lst.count(0))
+for number in lst:
+  if not number:
+    lst.remove(number)
+    lst.append(number)
+print(lst)

@@ -5,8 +5,10 @@
 #Важно: 1 1 1 - это 3 пары, 1 1 1 1 - это 6 пар
 
 lst = [2, 6, 8, 2, 9, 6, 2, 2, 6]
+dct = {}
 counter = 0
 for element in lst:
-  if lst.count(element) > 1:
-    counter += lst.count(element) - 1
-print(counter // 2)
+  dct[element] = dct.get(element, 0) + 1
+for key in dct:
+  counter += (dct[key] * (dct[key] - 1)) / 2
+print(int(counter))
