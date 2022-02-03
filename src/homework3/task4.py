@@ -9,7 +9,7 @@ lst = [2, 6, 8, 2, 9, 6, 2, 2, 6]
 dct = {}
 counter = 0
 for element in lst:
-  dct[element] = dct.get(element, 0) + 1
+    dct[element] = dct.get(element, 0) + 1
 for key in dct:
-  counter += (dct[key] * (dct[key] - 1)) / 2
+    counter += (dct[key] * (dct[key] - 1)) / 2
 print(int(counter))
