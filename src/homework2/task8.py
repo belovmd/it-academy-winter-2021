@@ -18,7 +18,7 @@ def disemvowel(string_):
 # The provided code stub reads and integer, n, from STDIN.
 # For all non-negative integers i < n, print i in square.
 if __name__ == '__main__':
-    n = int(raw_input())
+    n = int(input())
 
 if n:
     for elem in range(0, n):
@@ -43,5 +43,5 @@ def is_leap(year):
     return leap
 
 
-year = int(raw_input())
+year = int(input())
 print(is_leap(year))
