@@ -9,7 +9,9 @@ product_price_rub = int(input('Enter product rub: '))
 product_price_coins = int(input('Enter product penny: '))
 quantity_of_goods = int(input('Enter the quantity of goods: '))
 
-sum_price_rub = product_price_rub * quantity_of_goods
-sum_price_coins = product_price_coins * quantity_of_goods
+sum_price = quantity_of_goods * (100 * product_price_rub + product_price_coins)
+
+sum_price_rub = sum_price // 100
+sum_price_coins = sum_price % 100
 
 print(f"Общая цена {sum_price_rub} рублей {sum_price_coins} копеек")

@@ -5,7 +5,6 @@
 
 
 def number_length(a: int) -> int:
-    # your code here
     a = str(a)
     str_ = len(a)
     return str_
@@ -32,7 +31,6 @@ if __name__ == '__main__':
 
 
 def is_acceptable_password(password: str) -> bool:
-    # your code here
     if len(password) > 6:
         return True
     else:
@@ -44,9 +42,9 @@ if __name__ == '__main__':
     print(is_acceptable_password('short'))
 
     # These "asserts" are used for self-checking and not for an auto-testing
-    # assert is_acceptable_password('short') == False
-    # assert is_acceptable_password('muchlonger') == True
-    # assert is_acceptable_password('ashort') == False
+    assert is_acceptable_password('short') == False
+    assert is_acceptable_password('muchlonger') == True
+    assert is_acceptable_password('ashort') == False
     print("Coding complete? Click 'Check' to earn cool rewards!")
 
 
@@ -57,7 +55,6 @@ if __name__ == '__main__':
 
 
 def backward_string(val: str) -> str:
-    # your code
     return val[::-1]
 
 
@@ -71,3 +68,68 @@ if __name__ == '__main__':
     assert backward_string('ohho') == 'ohho'
     assert backward_string('123456789') == '987654321'
     print("Coding complete? Click 'Check' to earn cool rewards!")
+
+
+# ______________Example_4_Simple________________________
+# You have to split a given array into two arrays.
+# If it has an odd amount of elements, then the first array should have more elements.
+# If it has no elements, then two empty arrays should be returned.
+# Input: Array.
+# Output: Array or two arrays.
+
+
+def split_list(items: list) -> list:
+    len_items = (len(items) + 1) // 2
+    return [items[: len_items], items[len_items:]]
+
+
+if __name__ == '__main__':
+    print("Example:")
+    print(split_list([1, 2, 3, 4, 5, 6]))
+
+    # These "asserts" are used for self-checking and not for an auto-testing
+    assert split_list([1, 2, 3, 4, 5, 6]) == [[1, 2, 3], [4, 5, 6]]
+    assert split_list([1, 2, 3]) == [[1, 2], [3]]
+    assert split_list([1, 2, 3, 4, 5]) == [[1, 2, 3], [4, 5]]
+    assert split_list([1]) == [[1], []]
+    assert split_list([]) == [[], []]
+    print("Coding complete? Click 'Check' to earn cool rewards!")
+
+
+# ______________Example_5_Moderate_________________________
+# You are given an expression with numbers, brackets and operators.
+# For this task only the brackets matter. Brackets come in three flavors: "{}" "()" or "[]".
+# Brackets are used to determine scope or to restrict some expression.
+# If a bracket is open, then it must be closed with a closing bracket of the same type.
+# The scope of a bracket must not intersected by another bracket.
+# In this task you should make a decision,
+# whether to correct an expression or not based on the brackets.
+# Do not worry about operators and operands.
+#
+# Input: An expression with different of types brackets as a string (unicode).
+#
+# Output: A verdict on the correctness of the expression in boolean (True or False).
+
+
+def checkio(expression):
+    my_list = list()
+    my_dict = {'(': ')', '[': ']', '{': '}'}
+    for elem in expression:
+        if elem in my_dict.keys():
+            my_list.append(elem)
+        elif elem in my_dict.values():
+            if my_list and elem == my_dict[my_list[-1]]:
+                my_list.pop()
+            else:
+                return False
+    return not my_list
+
+
+# These "asserts" using only for self-checking and not necessary for auto-testing
+if __name__ == '__main__':
+    assert checkio("((5+3)*2+1)") == True, "Simple"
+    assert checkio("{[(3+1)+2]+}") == True, "Different types"
+    assert checkio("(3+{1-1)}") == False, ") is alone inside {}"
+    assert checkio("[1+1]+(2*2)-{3/3}") == True, "Different operators"
+    assert checkio("(({[(((1)-2)+3)-3]/3}-3)") == False, "One is redundant"
+    assert checkio("2+3") == True, "No brackets, no problem"

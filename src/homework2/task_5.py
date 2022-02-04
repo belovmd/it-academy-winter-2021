@@ -10,4 +10,5 @@ fib_2 = 1
 
 for num in range(number_enter):
     fib_1, fib_2 = fib_2, fib_1 + fib_2
-    print(fib_2)
+
+print(fib_2)

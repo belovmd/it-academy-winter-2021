@@ -5,13 +5,13 @@
 # len(list) - количество элементов в списке
 
 
-tags = ',./?<>!@#${}[]%^&*()_-+=:;\'"'
+from string import punctuation
 
 str_enter = input('Enter string: ')
 new_str = ''
 
 for word in str_enter:
-    if word not in tags:
+    if word not in punctuation:
         new_str += word
 
 str_split = max(new_str.split(), key=len)
