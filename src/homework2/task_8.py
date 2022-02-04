@@ -37,14 +37,16 @@ def is_acceptable_password(password: str) -> bool:
         return False
 
 
+true = True
+false = False
 if __name__ == '__main__':
     print("Example:")
     print(is_acceptable_password('short'))
 
     # These "asserts" are used for self-checking and not for an auto-testing
-    assert is_acceptable_password('short') == False
-    assert is_acceptable_password('muchlonger') == True
-    assert is_acceptable_password('ashort') == False
+    assert is_acceptable_password('short') == false
+    assert is_acceptable_password('muchlonger') == true
+    assert is_acceptable_password('ashort') == false
     print("Coding complete? Click 'Check' to earn cool rewards!")
 
 
@@ -125,11 +127,13 @@ def checkio(expression):
     return not my_list
 
 
+true = True
+false = False
 # These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    assert checkio("((5+3)*2+1)") == True, "Simple"
-    assert checkio("{[(3+1)+2]+}") == True, "Different types"
-    assert checkio("(3+{1-1)}") == False, ") is alone inside {}"
-    assert checkio("[1+1]+(2*2)-{3/3}") == True, "Different operators"
-    assert checkio("(({[(((1)-2)+3)-3]/3}-3)") == False, "One is redundant"
-    assert checkio("2+3") == True, "No brackets, no problem"
+    assert checkio("((5+3)*2+1)") == true, "Simple"
+    assert checkio("{[(3+1)+2]+}") == true, "Different types"
+    assert checkio("(3+{1-1)}") == false, ") is alone inside {}"
+    assert checkio("[1+1]+(2*2)-{3/3}") == true, "Different operators"
+    assert checkio("(({[(((1)-2)+3)-3]/3}-3)") == false, "One is redundant"
+    assert checkio("2+3") is True, "No brackets, no problem"
