@@ -6,6 +6,7 @@ list_ = [1, 2, 3, 1, 2, 3, 4, 5, 'asd', 'asd', 'dsa']
 new_list = []
 
 for elem in list_:
-    if elem not in new_list:
+    if list_.count(elem) == 1:
         new_list.append(elem)
+
 print(new_list)

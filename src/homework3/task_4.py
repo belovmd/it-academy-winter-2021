@@ -8,9 +8,6 @@
 
 str_ = input('Enter a string of numbers separated by a space: ').split()
 str_ran = [int(elem) for elem in str_]
-count = 0
-for elem in range(len(str_ran)):
-    for elem1 in range(elem + 1, len(str_ran)):
-        if str_ran[elem] == str_ran[elem1]:
-            count += 1
-print(count)
+
+result = (len(str_ran) * (len(str_ran) - 1)) // 2
+print(result)

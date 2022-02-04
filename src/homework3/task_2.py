@@ -3,10 +3,10 @@ import copy
 # Используйте генератор списков чтобы получить следующий: ['ab', 'ac', 'ad', 'bb', 'bc', 'bd'].
 
 
-list_ab = ['a', 'b']
+list_ab = ['ab']
 list_bcd = ['b', 'c', 'd']
 
-list_rez = [elem1 + elem2 for elem1 in list_ab for elem2 in list_bcd]
+list_rez = [el + elem2 for elem1 in list_ab for el in elem1 for elem2 in list_bcd]
 
 print(list_rez, sep='\n')
 
@@ -20,10 +20,10 @@ print(list_slice)
 # Используйте генератор списков чтобы получить следующий ['1a', '2a', '3a', '4a'].
 
 
-list_numb = ['1', '2', '3', '4']
+list_numb = ['1234']
 list_char = ['a']
 
-list_rez = [elem1 + elem2 for elem1 in list_numb for elem2 in list_char]
+list_rez = [el + elem2 for elem1 in list_numb for el in sorted(set(elem1)) for elem2 in list_char]
 
 print(list_rez)
 
