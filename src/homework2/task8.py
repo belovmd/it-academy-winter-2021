@@ -4,7 +4,7 @@
 # Поместите 3 простых и 2 сложных задачи на Ваш выбор в пул реквест.
 
 
-# codewars.com, elementary #1
+# codewars.com, 7 kyu
 # Remove all of the vowels from string
 # Note: for this kata "y" isn't considered a vowel.
 def disemvowel(string_):
@@ -14,7 +14,7 @@ def disemvowel(string_):
     return string_
 
 
-# hackerrank.com, elementary #2
+# hackerrank.com, easy
 # The provided code stub reads and integer, n, from STDIN.
 # For all non-negative integers i < n, print i in square.
 if __name__ == '__main__':
@@ -25,7 +25,7 @@ if n:
         print(elem ** 2)
 
 
-# hackerrank.com, elementary #3
+# hackerrank.com, medium
 # Given a year, determine whether it is a leap year.
 # If it is a leap year, return the Boolean True, otherwise return False.
 # Note that the code stub provided reads from STDIN and passes arguments to the is_leap function.
