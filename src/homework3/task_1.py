@@ -14,4 +14,4 @@ for elem in range(1, 100):
         print(elem)
 
 print([('FizzBuzz' if (num % 15 == 0) else 'Fizz' if (num % 3 == 0) else 'Buzz' if (num % 5 == 0)
-else num) for num in range(1, 100)])
+        else num) for num in range(1, 100)])
