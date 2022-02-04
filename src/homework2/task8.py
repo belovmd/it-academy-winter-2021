@@ -15,8 +15,7 @@ from typing import Iterable
 
 def remove_all_before(items: list, border: int) -> Iterable:
     if border in items:
-        bor = items.index(border)
-        result = items[bor::]
+        result = items[items.index(border)::]
     else:
         result = items
     return result

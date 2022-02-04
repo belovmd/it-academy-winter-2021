@@ -3,14 +3,10 @@
 # Посчитайте общую цену в рублях и копейках за L товаров.
 
 
-rub = float(input('Введите количество рублей: '))
-kop = float(input('Введите количество копеек: ')) / 100
-quantity = float(input('Введите количество товара: '))
+m, n, s = input('Введите М рублей: '), input('N копеек: '), input('S товара: ')
 
-grocery_bill = str((rub + kop) * quantity)
-total_rub, total_kop = grocery_bill.split('.')
-
-if len(total_kop) == 1:
-    total_kop = int(total_kop) * 10
+grocery_bill = (float(m) + (float(n) / 100)) * float(s)
+total_rub = int(grocery_bill)
+total_kop = int((grocery_bill - total_rub) * 100)
 
 print('Общая цена ', total_rub, ' рублей ', total_kop, ' копеек')

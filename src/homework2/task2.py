@@ -2,13 +2,14 @@
 # Учтите что в предложении есть знаки препинания.
 
 
-PUNKT_MARKS = '''!"#$%&'()*+, -./:;<=>?@[\\]^_`{|}~'''
+import string
+
 
 words = input('Введите предложение: ').split()
-max_word = words[0].strip(PUNKT_MARKS)
+max_word = words[0].strip(string.punctuation)
 
 for word in words:
-    word = word.strip(PUNKT_MARKS)
+    word = word.strip(string.punctuation)
     if len(word) > len(max_word):
         max_word = word
 
