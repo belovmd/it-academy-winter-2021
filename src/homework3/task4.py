@@ -7,12 +7,14 @@
 # Важно: 1 1 1 - это 3 пары, 1 1 1 1 - это 6 пар
 
 
-str_ = '1 1 2 1 2 3 4 1 1'
-str_ = str_.split()
+str_ = '1 1 2 1 2 3 4 1 1'.split()
 counter = 0
+dict_ = {}
 
 for elem in str_:
-    if str_.count(elem) > 1:
-        counter += str_.count(elem) - 1
+    dict_[elem] = dict_.get(elem, 0) + 1
 
-print(int(counter / 2))
+for key in dict_:
+    counter = counter + ((dict_[key] * (dict_[key] - 1)) / 2)
+
+print(int(counter))

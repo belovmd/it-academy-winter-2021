@@ -14,7 +14,7 @@ print(lst1)
 lst2 = lst1[::2]
 print(lst2)
 
-lst3 = [(str(elem1) + 'a') for elem1 in range(1, 5)]
+lst3 = [(str(elem1) + 'a') for elem1 in '1234']
 print(lst3)
 
 print(lst3.pop(1))
