@@ -7,7 +7,7 @@ lst = [1, 1, 3, 2, 1, 2, 3, 4, 1]
 result = []
 
 for elem in lst:
-    if elem not in result:
+    if elem not in result and lst.count(elem) == 1:
         result.append(elem)
 
 print(result)
