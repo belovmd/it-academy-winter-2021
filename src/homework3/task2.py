@@ -17,7 +17,7 @@ print(list_1)
 print(list_1[::2])
 
 # subtask 3
-list_2 = [str(number) + "a" for number in range(1, 5)]
+list_2 = [str(number) + "a" for number in "1234"]
 print(list_2)
 
 # subtask 4

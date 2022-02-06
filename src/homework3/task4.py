@@ -8,6 +8,8 @@
 Важно: 1 1 1 - это 3 пары, 1 1 1 1 - это 6 пар
 """
 
+# elements_value means possessive pronoun like element's value not plural values
+
 # Input: 1 1 1
 # Output: 3
 
@@ -19,8 +21,12 @@
 
 list_ = [int(number) for number in input("Enter the elements: ").split()]
 counter = 0
+dict_ = {}
 
 for element in list_:
-    if list_.count(element) > 1:
-        counter += (list_.count(element) - 1)
-print(counter // 2)
+    dict_[element] = dict_.get(element, 0) + 1
+
+for elements_value in dict_.values():
+    if elements_value > 1:
+        counter += elements_value * (elements_value - 1) / 2
+print(int(counter))

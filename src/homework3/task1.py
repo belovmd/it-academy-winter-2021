@@ -11,7 +11,7 @@ for number in list_:
         final_list.append("Fizz")
     elif not (number % 5):
         final_list.append("Buzz")
-    elif not (number % 3) and not (number % 5):
+    elif not (number % 15):
         final_list.append("FizzBuzz")
     else:
         final_list.append(number)
