@@ -24,7 +24,7 @@ https://www.hackerrank.com/, https://acmp.ru
 # double_char("Hello World") ==> "HHeelllloo  WWoorrlldd"
 # double_char("1234!_ ") ==> "11223344!!__  """"
 str_ = input("Enter your string: ")
-print("".join(char + char for char in str_))
+print("".join(char * 2 for char in str_))
 
 # task 2
 # Try to find out how many zeros a given number has at the end (from py.checkio.org)
@@ -135,7 +135,7 @@ def sieve_eratosphenes(input_number):
     # we need to exclude 1 which is not prime number from theory of school math, that's why
     sieve[1] = 0
     for divisor in sieve:
-        if divisor > 1:
+        if divisor >= 2:
             for number in range(divisor ** 2, len(sieve), divisor):
                 sieve[number] = 0
     final_sieve = [prime for prime in sieve if prime != 0]
