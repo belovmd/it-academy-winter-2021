@@ -3,7 +3,7 @@
 # символами конца строки. Определите, сколько различных слов содержится в этом тексте.
 
 import string
-string_ =  input('Введите текст: ')
+string_ = input('Введите текст: ')
 without_punctuation = string_.translate(str.maketrans('', '', string.punctuation))
 small_letter = without_punctuation.lower()
 words = small_letter.split()
