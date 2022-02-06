@@ -18,7 +18,7 @@ numb_request = int(input('Введите число запросов: '))
 list_cities = []
 for _ in range(numb_request):
     list_cities.append(input('Введите название города: '))
-list_countries = [] 
+list_countries = []
 for city in list_cities:
     for key, value in dict_cities.items():
         if city in value:
