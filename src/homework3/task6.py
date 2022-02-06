@@ -8,10 +8,8 @@ lst_ = [1, -2, 0, -9, 0, 1, 6, -4, 8, 9, 0]
 print(lst_)
 
 for elem in lst_:
-    if elem == 0:
+    if not elem:
         lst_.remove(elem)
         lst_.append(0)
-    else:
-        pass
 
 print(lst_)

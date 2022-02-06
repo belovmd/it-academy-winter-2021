@@ -6,4 +6,12 @@
 # Выходные данные - количество пар.
 # Важно: 1 1 1 - это 3 пары, 1 1 1 1 - это 6 пар
 
-print("Пока туплю :(")
+lst_ = [1, 1, 1, 1]
+counter = 0
+
+for elem in range(len(lst_)):
+    for elem2 in range(elem + 1, len(lst_)):
+        if lst_[elem] == lst_[elem2]:
+            counter += 1
+
+print(counter, "пар(-а/ы)")
