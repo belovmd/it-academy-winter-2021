@@ -1,0 +1,11 @@
+Function func, Time Mon Feb  7 18:20:32 2022, Result 1 
+Function func_two, Time Mon Feb  7 18:20:32 2022, Result 7 
+Function func, Time Mon Feb  7 18:35:48 2022, Result 1 
+Function func_two, Time Mon Feb  7 18:35:48 2022, Result 7 
+Function func, Time Mon Feb  7 18:36:06 2022, Result bbb 
+Function func_two, Time Mon Feb  7 18:36:06 2022, Result 7 
+Function func, Time Mon Feb  7 18:36:46 2022, Result bbb, Variables ('bbb',) 
+Function func_two, Time Mon Feb  7 18:36:46 2022, Result 7, Variables (7,) 
+Function func, Time Mon Feb  7 18:38:03 2022, Result bbb, Variables ('bbb',) 
+Function func_two, Time Mon Feb  7 18:38:03 2022, Result 7, Variables (7,) 
+Function func_three, Time Mon Feb  7 18:38:03 2022, Result a124mmm, Variables ('a', '124', 'mmm') 
