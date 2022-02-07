@@ -10,15 +10,13 @@ dict_ = {}
 des_country = []
 
 for elem in str_[1: str_[0] + 1]:
-  el = elem.split()
-  country = el.pop(0)
-  for city in el:
-    if city not in dict_:
-      dict_.update({city: country})
-    else:
-      dict_[city] = (dict_[city] + ', ' + country)
+    elem = elem.split()
+    country = elem.pop(0)
+    for city in elem:
+        if city not in dict_:
+            dict_.update({city: country})
+        else:
+            dict_[city] = (dict_[city] + ', ' + country)
 
 for des_city in str_[str_[0] + 2:]:
-  des_country.append(dict_[des_city])
-
-print(des_country)
+    print(dict_[des_city])
