@@ -19,13 +19,16 @@ def dec(func):
 def func(b):
     return b
 
+
 @dec
 def func_two(a):
     return a
 
+
 @dec
 def func_three(a, b, c):
     return a + b + c
+
 
 func("bbb")
 func_two(7)
