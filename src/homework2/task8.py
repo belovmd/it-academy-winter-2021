@@ -15,16 +15,6 @@ def disemvowel(string_):
 
 
 # 2. hackerrank.com, easy
-# The provided code stub reads and integer, n, from STDIN.
-# For all non-negative integers i < n, print i in square.
-if __name__ == '__main__':
-    n = int(input())
-
-if n:
-    for elem in range(0, n):
-        print(elem ** 2)
-
-# 3. hackerrank.com, easy
 # Given an integer, n, perform the following conditional actions:
 # If n is odd, print Weird
 #   If n is even and in the inclusive range of 2 to 5, print Not Weird
@@ -39,7 +29,7 @@ elif (n > 20) or (not n % 2 and n in range(2, 6)):
     print("Not Weird")
 
 
-# 4. hackerrank.com, medium
+# 3. hackerrank.com, medium
 # Given a year, determine whether it is a leap year.
 # If it is a leap year, return the Boolean True, otherwise return False.
 # Note that the code stub provided reads from STDIN and passes arguments to the is_leap function.
@@ -61,7 +51,7 @@ year = int(input())
 print(is_leap(year))
 
 
-# 5. codewars.com, 5 kyu
+# 4. codewars.com, 5 kyu
 # It must start with a hashtag (#).
 # All words must have their first letter capitalized.
 # If the final result is longer than 140 chars it must return false.
@@ -75,7 +65,7 @@ def generate_hashtag(s):
         return hashtag
 
 
-# 6. codewars.com, 4 kyu
+# 5. codewars.com, 4 kyu
 # Complete the solution so that it strips all text that follows any of a set of comment markers
 # passed in. Any whitespace at the end of the line should also be stripped out.
 """
