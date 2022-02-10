@@ -11,4 +11,3 @@ if front == back:
     print(front, 'is a palindrome')
 else:
     print(front, 'is not a palindrome')
-
