@@ -9,7 +9,5 @@ elif index == 2:
     print(fib2)
 else:
     for el in range(2, index):
-        fib = fib1 + fib2
-        fib1 = fib2
-        fib2 = fib
-    print(fib)
+        fib1, fib2 = fib2, fib1 + fib2
+    print(fib2)
