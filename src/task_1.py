@@ -25,4 +25,3 @@ def runner(*args):
 runner("sum_numbers")
 runner("bank", "number_of_pairs")
 runner()
-
