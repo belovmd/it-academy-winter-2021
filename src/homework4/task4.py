@@ -4,11 +4,4 @@
 lst1 = [1, 3, 5, 7]
 lst2 = [1, 2, 4, 5, 6, 9]
 
-# TODO: Додумать, тут или в 3 нужно &, и вообще всю логику пересмотреть
-if len(lst1) > len(lst2) or len(lst1) == len(lst2):
-    dct_ = set(lst1) - set(lst2)
-else:
-    dct_ = set(lst2) - set(lst1)
-
-print("Числа, входящие только в один из списков:", dct_)
-print("Всего различных чисел:", len(dct_))
+print(len(set(lst1) ^ set(lst2)))
