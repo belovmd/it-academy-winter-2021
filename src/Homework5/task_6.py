@@ -16,4 +16,3 @@ if result == 0:
     print('The maximum divisor, which is: ', number)
 else:
     print('The maximum divisor, which is: ', power_of_two)
-
