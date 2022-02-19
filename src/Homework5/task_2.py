@@ -11,7 +11,7 @@ def my_dec(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
 
-        with open('result_task_2.txt', 'a') as result_txt:
+        with open('result_task_2.txt', 'a', encoding='1251') as result_txt:
             result_txt.write('Имя функции: {name}\n'
                              'Функция запущена: {datetime_now}\n'
                              'Результат функции: {result}\n\n'
