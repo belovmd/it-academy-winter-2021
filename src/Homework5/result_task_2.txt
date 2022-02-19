@@ -1,28 +1,28 @@
-Имя функции: function_performed
-Функция запущена: 19-Feb-22 12:02
-Результат функции: 1 + 1 = 2
+Function name : function_performed
+Function start time : 19-Feb-22 12:02
+Function result : 1 + 1 = 2
 
-Имя функции: function_performed
-Функция запущена: 19-Feb-22 12:02
-Результат функции: 1 + 1 = 2
+Function name : function_performed
+Function start time : 19-Feb-22 12:02
+Function result : 1 + 1 = 2
 
-Имя функции: function_performed
-Функция запущена: 19-Feb-22 12:02
-Результат функции: 1 + 1 = 2
+Function name : function_performed
+Function start time : 19-Feb-22 12:02
+Function result : 1 + 1 = 2
 
-Имя функции: function_performed
-Функция запущена: 19-Feb-22 12:02
-Результат функции: 1 + 1 = 2
+Function name : function_performed
+Function start time : 19-Feb-22 12:02
+Function result : 1 + 1 = 2
 
-Имя функции: my_func
-Функция запущена: 19-Feb-22 12:02
-Результат функции: 4
+Function name : my_func
+Function start time : 19-Feb-22 12:02
+Function result : 4
 
-Имя функции: my_func
-Функция запущена: 19-Feb-22 12:02
-Результат функции: 4
+Function name : my_func
+Function start time : 19-Feb-22 12:02
+Function result : 4
 
-Имя функции: my_func
-Функция запущена: 19-Feb-22 12:02
-Результат функции: 4
+Function name : my_func
+Function start time : 19-Feb-22 12:02
+Function result : 4
 

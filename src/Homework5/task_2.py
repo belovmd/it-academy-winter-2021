@@ -11,10 +11,10 @@ def my_dec(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
 
-        with open('result_task_2.txt', 'a', encoding='1251') as result_txt:
-            result_txt.write('Имя функции: {name}\n'
-                             'Функция запущена: {datetime_now}\n'
-                             'Результат функции: {result}\n\n'
+        with open('result_task_2.txt', 'a', encoding='utf-8') as result_txt:
+            result_txt.write('Function name : {name}\n'
+                             'Function start time : {datetime_now}\n'
+                             'Function result : {result}\n\n'
                              .format(name=func.__name__,
                                      datetime_now=datetime.strftime(datetime.now(), '%d-%b-%y '
                                                                                     '%H:%m'),
