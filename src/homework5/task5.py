@@ -6,8 +6,8 @@ degree = 1
 
 if not num % 2 and num > 0:
     while degree < (num // 2):
-        degree = degree * 2     # или degree << 1, но я разницу не увидел при подсчёте
-elif num % 2 and num > 0:       # или просто что-то неправильно сделал
+        degree = degree * 2
+elif num % 2 and num > 0:
     while degree < num:
         degree = degree * 2
 
