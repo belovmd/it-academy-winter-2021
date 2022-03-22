@@ -6,7 +6,7 @@
 
 def get_ranges(list_):
     if list_:
-        list_ = sorted(list_)
+        list_.sort()
         first_num = last_num = 0
         dict_ = {}
 
@@ -22,7 +22,7 @@ def get_ranges(list_):
 
         for key, value in dict_.items():
             if value:
-                result += "{first}-{last},".format(first=key, last=key+value)
+                result += "{first}-{last},".format(first=key, last=key + value)
             else:
                 result += "{first},".format(first=key)
 
@@ -32,6 +32,7 @@ def get_ranges(list_):
 
 
 print(get_ranges([]))
+print(get_ranges([9, 8, 5, 4, 1, 0]))
 print(get_ranges([0, 1, 2, 3, 4, 7, 8, 10]))
 print(get_ranges([4, 7, 10]))
 print(get_ranges([2, 3, 8, 9]))
