@@ -14,13 +14,15 @@ def logs_dec(func):
         func_finish = datetime.now()
         time_result = func_finish - func_start
 
-        with open("data_hw5/logs.txt", "a", encoding="utf-8") as logs:
+        with open("data_hw5/task2_logs.txt", "a", encoding="utf-8") as logs:
             logs.write(
                 "Имя функции: {f}\n"
+                "Переданные аргументы: {arg}\n"
                 "Результат выполнения функции: {r}\n"
                 "Старт выполнения функции: {ts}\n"
                 "Конец выполнения функции: {tf}\n"
                 "Потрачено времени: {tr}\n\n".format(f=func.__name__,
+                                                     arg=(args, kwargs),
                                                      r=func_result,
                                                      ts=func_start,
                                                      tf=func_finish,
