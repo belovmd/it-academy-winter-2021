@@ -26,7 +26,8 @@ def logs_dec(func):
                                                      r=func_result,
                                                      ts=func_start,
                                                      tf=func_finish,
-                                                     tr=time_result)
+                                                     tr=time_result,
+                                                     )
             )
 
         return func_result
@@ -45,7 +46,6 @@ def example_func2(a, b):
 
 
 func2 = logs_dec(example_func2)
-
 
 example_func(2, 4)
 time.sleep(2)
