@@ -29,10 +29,10 @@ for element in range(1, n):
 print(round(sum_, 2))
 
 # 4
-# Возьмите 2 строки s1 и s2, содержащие только буквы от a до z.
-# Вернуть новую отсортированную строку,
-# самую длинную, содержащую отдельные буквы -
-# каждая взятая только один раз - исходящая из s1 или s2.
+# Введите 2 строки s1 и s2, содержащие только буквы от a до z.
+# Необходимо вернуть новую отсортированную по алфавиту строку,
+# содержащую буквы исходных строк s1 и s2 -
+# каждая взятая только один раз, т.е. буквы не должны повторяться.
 
 s1 = input('Введите строку s1: ')
 s2 = input('Введите строку s2: ')
@@ -62,3 +62,82 @@ for element in range(a, b, step):
     sum_ += element
 sum_ -= a
 print(sum_)
+
+# 6
+# In a given string you should reverse every word, but the words
+# should stay in their places.
+# Precondition: The line consists only from alphabetical symbols and spaces.
+
+def backward_string_by_word(text: str) -> str:
+    lst = []
+    lst.extend(text)
+    lst.extend(' ')
+    result = []
+    str_ = ''
+    for i in range(len(lst)):
+        if lst[i].isalpha():
+            str_ += lst[i]
+        else:
+            result.append(str_[::-1])
+            result.append(lst[i])
+            str_ = ''
+    return ''.join(result)[:-1]
+
+if name == 'main':
+    print("Example:")
+    print(backward_string_by_word(''))
+
+    # These "asserts" are used for self-checking and not for an auto-testing
+    assert backward_string_by_word('') == ''
+    assert backward_string_by_word('world') == 'dlrow'
+    assert backward_string_by_word('hello world') == 'olleh dlrow'
+    assert backward_string_by_word('hello   world') == 'olleh   dlrow'
+    assert backward_string_by_word('welcome to a game') == 'emoclew ot a emag'
+    print("Coding complete? Click 'Check' to earn cool rewards!")
+
+# 7
+# You are given a list of files. You need to sort this list by the file extension.
+# The files with the same extension should be sorted by name.
+#
+# Some possible cases:
+#
+# Filename cannot be an empty string;
+# Files without the extension should go before the files with one;
+# Filename ".config" has an empty extension and a name ".config";
+# Filename "config." has an empty extension and a name "config.";
+# Filename "table.imp.xls" has an extension "xls" and a name "table.imp";
+# Filename ".imp.xls" has an extension "xls" and a name ".imp".
+
+from typing import List
+
+def sort_ext(tpl):
+    return (tpl[1][1:], tpl[0])
+
+def sort_by_ext(files: List[str]) -> List[str]:
+    list_new = []
+    for file in files:
+        x = file.rfind('.')
+        if not x:
+            name = file
+            ext = ''
+        else:
+            name = file[:x]
+            ext = file[x:]
+        list_new.append((name, ext))
+    list_new.sort(key=sort_ext)
+    result = [''.join(tpl_) for tpl_ in list_new]
+    return result
+
+if name == 'main':
+    print("Example:")
+    print(sort_by_ext(['1.cad', '1.bat', '1.aa']))
+
+    # These "asserts" are used for self-checking and not for an auto-testing
+    assert sort_by_ext(['1.cad', '1.bat', '1.aa']) == ['1.aa', '1.bat', '1.cad']
+    assert sort_by_ext(['1.cad', '1.bat', '1.aa', '2.bat']) == ['1.aa', '1.bat', '2.bat', '1.cad']
+    assert sort_by_ext(['1.cad', '1.bat', '1.aa', '.bat']) == ['.bat', '1.aa', '1.bat', '1.cad']
+    assert sort_by_ext(['1.cad', '1.bat', '.aa', '.bat']) == ['.aa', '.bat', '1.bat', '1.cad']
+    assert sort_by_ext(['1.cad', '1.', '1.aa']) == ['1.', '1.aa', '1.cad']
+    assert sort_by_ext(['1.cad', '1.bat', '1.aa', '1.aa.doc']) == ['1.aa', '1.bat', '1.cad', '1.aa.doc']
+    assert sort_by_ext(['1.cad', '1.bat', '1.aa', '.aa.doc']) == ['1.aa', '1.bat', '1.cad', '.aa.doc']
+    print("Coding complete? Click 'Check' to earn cool rewards!")
