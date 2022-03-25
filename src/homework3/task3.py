@@ -13,8 +13,8 @@ print(tpl1)
 tpl2 = ('a', 'b', 'c')
 lst2 = list(tpl2)
 print(lst2)
-a, b, c = 'a', 2, 'python'
-tpl3 = '123',
+a, b, c = ('a', 2, 'python')
+tpl3 = ('123', )
 for element in tpl3[0]:
     print(element, end=' ')
 print()

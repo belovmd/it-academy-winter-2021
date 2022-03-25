@@ -6,7 +6,7 @@
 # и 3, и 5 - FizzBuzz
 
 for number in range(1, 101):
-    if (not number % 3) and (not number % 5):
+    if not number % 15:
         print('FizzBuzz')
     elif not number % 3:
         print('Fizz')

@@ -9,9 +9,9 @@
 # Важно: 1 1 1 - это 3 пары, 1 1 1 1 - это 6 пар
 
 str_ = '1 2 1 1 1 2'
-lst = str_.split()
+str_new = str_ + ' '
 counter = 0
-for element in lst:
-    if lst.count(element) > 1:
-        counter += lst.count(element) - 1
-print(int(counter / 2))
+n = len(str_new)
+for i in range(0, n, 2):
+    counter += str_new.count(str_new[i], i+2, n)
+print(counter)

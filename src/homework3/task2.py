@@ -13,7 +13,7 @@
 lst1 = [elem1 + elem2 for elem1 in 'ab' for elem2 in 'bcd']
 print(lst1)
 print(lst1[::2])
-lst2 = [str(i) + 'a' for i in range(1, 5)]
+lst2 = [i + 'a' for i in '1234']
 print(lst2)
 print(lst2.pop(1))
 lst3 = lst2.copy()
