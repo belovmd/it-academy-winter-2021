@@ -67,8 +67,14 @@ print(sum_)
 # In a given string you should reverse every word, but the words
 # should stay in their places.
 # Precondition: The line consists only from alphabetical symbols and spaces.
+# Examples:
+# backward_string_by_word('') == ''
+# backward_string_by_word('world') == 'dlrow'
+# backward_string_by_word('hello world') == 'olleh dlrow'
+# backward_string_by_word('hello   world') == 'olleh   dlrow'
+# backward_string_by_word('welcome to a game') == 'emoclew ot a emag'
 
-def backward_string_by_word(text: str) -> str:
+def backward_string_by_word(text):
     lst = []
     lst.extend(text)
     lst.extend(' ')
@@ -83,21 +89,12 @@ def backward_string_by_word(text: str) -> str:
             str_ = ''
     return ''.join(result)[:-1]
 
-if name == 'main':
-    print("Example:")
-    print(backward_string_by_word(''))
-
-    # These "asserts" are used for self-checking and not for an auto-testing
-    assert backward_string_by_word('') == ''
-    assert backward_string_by_word('world') == 'dlrow'
-    assert backward_string_by_word('hello world') == 'olleh dlrow'
-    assert backward_string_by_word('hello   world') == 'olleh   dlrow'
-    assert backward_string_by_word('welcome to a game') == 'emoclew ot a emag'
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+print(backward_string_by_word(''))
 
 # 7
-# You are given a list of files. You need to sort this list by the file extension.
-# The files with the same extension should be sorted by name.
+# You are given a list of files. You need to sort this list by
+# the file extension. The files with the same extension should
+# be sorted by name.
 #
 # Some possible cases:
 #
@@ -108,12 +105,10 @@ if name == 'main':
 # Filename "table.imp.xls" has an extension "xls" and a name "table.imp";
 # Filename ".imp.xls" has an extension "xls" and a name ".imp".
 
-from typing import List
-
 def sort_ext(tpl):
     return (tpl[1][1:], tpl[0])
 
-def sort_by_ext(files: List[str]) -> List[str]:
+def sort_by_ext(files):
     list_new = []
     for file in files:
         x = file.rfind('.')
@@ -128,16 +123,4 @@ def sort_by_ext(files: List[str]) -> List[str]:
     result = [''.join(tpl_) for tpl_ in list_new]
     return result
 
-if name == 'main':
-    print("Example:")
-    print(sort_by_ext(['1.cad', '1.bat', '1.aa']))
-
-    # These "asserts" are used for self-checking and not for an auto-testing
-    assert sort_by_ext(['1.cad', '1.bat', '1.aa']) == ['1.aa', '1.bat', '1.cad']
-    assert sort_by_ext(['1.cad', '1.bat', '1.aa', '2.bat']) == ['1.aa', '1.bat', '2.bat', '1.cad']
-    assert sort_by_ext(['1.cad', '1.bat', '1.aa', '.bat']) == ['.bat', '1.aa', '1.bat', '1.cad']
-    assert sort_by_ext(['1.cad', '1.bat', '.aa', '.bat']) == ['.aa', '.bat', '1.bat', '1.cad']
-    assert sort_by_ext(['1.cad', '1.', '1.aa']) == ['1.', '1.aa', '1.cad']
-    assert sort_by_ext(['1.cad', '1.bat', '1.aa', '1.aa.doc']) == ['1.aa', '1.bat', '1.cad', '1.aa.doc']
-    assert sort_by_ext(['1.cad', '1.bat', '1.aa', '.aa.doc']) == ['1.aa', '1.bat', '1.cad', '.aa.doc']
-    print("Coding complete? Click 'Check' to earn cool rewards!")
+print(sort_by_ext(['1.cad', '1.bat', '1.aa', '.aa.doc']))
