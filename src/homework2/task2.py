@@ -4,11 +4,11 @@
 # my_string.split([chars]) возвращает список строк.
 # len(list) - количество элементов в списке
 
-import re
+punctuation = '!()-[]\\/;:\'",<>.?'
 
 text = input('Введите предложение: ')
-text_clear = re.sub(r'[^\w\s]', '', text)
-lst = text_clear.split()
+lst_ = text.split()
+lst = [el.strip('!()-[]\\/;:\'",<>.?') for el in lst_]
 max_word = ''
 for word in lst:
     if len(word) > len(max_word):
