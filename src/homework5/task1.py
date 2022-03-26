@@ -11,10 +11,11 @@ def runner(*args):
             f = getattr(homework4, arg)
             f()
     else:
-        func = [a for a in dir(homework4) if a[0] != ('_')]
+        func = [a for a in dir(homework4) if a[0] != '_']
         for arg in func:
             f = getattr(homework4, arg)
             f()
+
 
 runner()
 runner('task1')
