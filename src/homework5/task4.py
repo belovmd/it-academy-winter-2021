@@ -1,3 +1,10 @@
+# File gas data from IMDB. Data is stored in a file ./data_hw5/ ratings.list.
+# Open and read file (if it doesn't exist print error).
+# Find top 250 and extract the headers.
+# Program create 3 files top250_movies.txt – name of the movies,
+# ratings.txt – bar graph of ratings, years.txt – bar graph of years.
+
+
 def histogram(lst):
     lst.sort()
     dct = {}
