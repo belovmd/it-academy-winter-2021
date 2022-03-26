@@ -6,9 +6,9 @@
 # гистограмма рейтингов, years.txt – гистограмма годов.
 
 
-import os
-import matplotlib.pyplot as plt
 from google_drive_downloader import GoogleDriveDownloader as gdd
+import matplotlib.pyplot as plt
+import os
 
 
 gdd.download_file_from_google_drive(file_id='17ZjvONKYeKsmyKAy_xqss-Hl6xyLrvpa',
