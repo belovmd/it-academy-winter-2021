@@ -16,7 +16,7 @@ def runner(*args):
     }
 
     result = []
-    for element in  dir(task1_prev):
+    for element in dir(task1_prev):
         if callable(getattr(task1_prev, element)):
             result.append(element)
     if args:
