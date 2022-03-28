@@ -7,9 +7,9 @@
 # ratings.txt – гистограмма рейтингов, years.txt – гистограмма годов.
 
 file = open(r'C:\Users\Marina\Documents\ratings.list')
-top250_movies = open('top250_movies.txt', 'w')
-ratings = open('ratings.txt', 'w')
-years = open('years.txt', 'w')
+top250_movies = open(r'C:\Users\Marina\Documents\top250_movies.txt', 'w')
+ratings = open(r'C:\Users\Marina\Documents\ratings.txt', 'w')
+years = open(r'C:\Users\Marina\Documents\years.txt', 'w')
 
 content = file.readlines()
 list_rating = []
