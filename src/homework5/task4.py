@@ -14,7 +14,7 @@ years = open(r'C:\Users\Marina\Documents\years.txt', 'w')
 content = file.readlines()
 list_rating = []
 list_year = []
-for i in range(28, 28+250):
+for i in range(28, 28 + 250):
     list1 = content[i].split()
     name = ' '.join(list1[3:-1])
     top250_movies.write(name + '\n')

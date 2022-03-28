@@ -5,9 +5,9 @@
 num = int(input('Введите число: '))
 
 for i in range(num):
-    power_of_two = 2**i
+    power_of_two = 2 ** i
     if power_of_two >= num:
-        number_less = 2**(i-1)
+        number_less = 2 ** (i - 1)
         number_greater = power_of_two
         break
 
