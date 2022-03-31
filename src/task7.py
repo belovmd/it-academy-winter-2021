@@ -7,4 +7,3 @@ while a and b:
         b %= a
 else:
     print(a + b)
-    
