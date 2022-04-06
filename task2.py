@@ -1,6 +1,7 @@
 from datetime import datetime
 import time
 
+
 def call(func):
     def wrapper(a, b, lag=0):
         start = datetime.now()
@@ -10,11 +11,13 @@ def call(func):
         print(f'>> функция {func.__name__} время: {call}')
     return wrapper
 
+
 @call
 def with_lag(a, b, lag=0):
     print('сложить', a, b, lag)
     time.sleep(lag)
     return a + b
+
 
 print('старт')
 with_lag(11, 33)
