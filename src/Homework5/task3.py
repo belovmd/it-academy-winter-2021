@@ -12,7 +12,7 @@
 def get_ranges(lst):
     str_ = ''
     str_ = str_ + str(lst[0])
-    for i in range(1,  (len(lst) - 1)):
+    for i in range(1, (len(lst) - 1)):
         if (lst[i] - lst[i - 1] > 1) and (lst[i + 1] - lst[i] == 1):
             str_ = str_ + ','
             str_ = str_ + str(lst[i])
