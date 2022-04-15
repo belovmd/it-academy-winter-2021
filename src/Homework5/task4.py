@@ -28,7 +28,6 @@ dict_rank = dict
 set_year = set()
 dict_year = dict
 y_list_year = []
-
 try:
     open('ratings.list', 'rt')
 except FileNotFoundError:
@@ -46,18 +45,15 @@ else:
         list_title.pop()
         list_rank.pop()
         list_year.pop()
-
         file1 = open('top250_movies.txt', 'w')
         file1.writelines(line + '\n' for line in list_title)
         file1.close()
         print('Export titles complete')
-
         list_array_rank = []
         x_rank = np.arange(float(min(list_rank)), (float(max(list_rank)) + 0.1), 0.1)
         print(x_rank)
         for elem in x_rank:
             list_array_rank.append(round(float(elem), 1))
-
         float_x = []
         list_rank_y = []
         for elem in x_rank:
@@ -75,14 +71,12 @@ else:
         file2.writelines(line + '\n' for line in exp_rank)
         file2.close()
         print('Export rates complete')
-
         fig1, ax = plt.subplots()
         ax.bar(x_rank, y_rank)
         ax.set_facecolor('seashell')
         fig1.set_facecolor('floralwhite')
         fig1.set_figwidth(12)  # ширина Figure
         fig1.set_figheight(6)  # высота Figure
-
         x_year = np.arange(int(min(list_year)), (int(max(list_year)) + 1), 1)
         for elem in x_year:
             list_str_array_year.append(str(elem))
@@ -91,16 +85,13 @@ else:
             dict_year[key] = list_year.count(key)
         for _ in dict_year.values():
             y_list_year.append(_)
-
         exp_year = []
         for i in range(len(x_year)):
             exp_year.append(str(list_str_array_year[i]) + ': ' + (str(y_list_year[i] * '*')))
-
         file3 = open('years.txt', 'w')
         file3.writelines(line + '\n' for line in exp_year)
         file3.close()
         print('Export years complete')
-
         fig2, bx = plt.subplots()
         bx.bar(x_year, y_list_year)
         bx.set_facecolor('seashell')
