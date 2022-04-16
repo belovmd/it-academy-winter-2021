@@ -10,7 +10,6 @@ c. runner(‘func’, ‘func1’...) - вызывает все переданн
 import homeworks3
 
 
-
 def runner(*args):
     if args:
         for arg in args:
