@@ -8,8 +8,9 @@ ratings.txt – гистограмма рейтингов, years.txt – гис�
 Задачу поместите в файл task4.py в папке src/homework5.
 '''
 
-import numpy as np
 from matplotlib import pyplot as plt
+import numpy as np
+
 
 #  a
 try:
