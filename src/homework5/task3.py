@@ -11,11 +11,9 @@
 def get_ranges(lst):
     result = ''
     for num in range(len(lst) - 1):
-        if lst[num] + 1 == lst[num + 1] \
-                and lst[num] - 1 != lst[num - 1]:
+        if lst[num] + 1 == lst[num + 1] and lst[num] - 1 != lst[num - 1]:
             result += str(lst[num]) + '-'
-        elif lst[num] + 1 == lst[num + 1] \
-                and lst[num] - 1 == lst[num - 1]:
+        elif lst[num] + 1 == lst[num + 1] and lst[num] - 1 == lst[num - 1]:
             continue
         else:
             result += str(lst[num]) + ','
